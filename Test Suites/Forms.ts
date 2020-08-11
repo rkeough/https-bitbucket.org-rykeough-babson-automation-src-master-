@@ -14,6 +14,6 @@
       <guid>16d01be2-e66e-421c-8ed8-88300a8f993c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Forms/GraduateAdmissionForm</testCaseId>
+      <testCaseId>Test Cases/GradForms/GraduateAdmissionFormSubmit</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
