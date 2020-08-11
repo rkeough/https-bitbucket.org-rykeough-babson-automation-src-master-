@@ -63,41 +63,52 @@ WebUI.closeBrowser()
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://babson.tfaforms.net/users/login')
+WebUI.navigateToUrl('https://babson.tfaforms.net/reports/view/152')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/FormAssembly/inpuyFAEmail'), 'rkeough@babson.edu')
+WebUI.setText(findTestObject('FormAssembly/input_Username or Email_dataUserusername'), 
+    'rkeough@babson.edu')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/FormAssembly/inputFAPassword'), 'GnaSFrYIDO8GMIhAnn2iDQ==')
+WebUI.setEncryptedText(findTestObject('FormAssembly/input_Show_dataUserpassword'), 
+    'GnaSFrYIDO8GMIhAnn2iDQ==')
 
-WebUI.click(findTestObject('Object Repository/FormAssembly/FALoginButton'))
+WebUI.click(findTestObject('FormAssembly/FALoginSubmit'))
 
-WebUI.click(findTestObject('Object Repository/FormAssembly/Form152Entries'))
-
-WebUI.click(findTestObject('Object Repository/FormAssembly/SelectEntry'))
+WebUI.click(findTestObject('FormAssembly/FARecord'))
 
 WebUI.switchToWindowTitle('FormAssembly Enterprise | Babson College : Responses')
 
-WebUI.verifyTextPresent('Automation', false)
+WebUI.verifyElementPresent(findTestObject('FormAssembly/div_Automation'), 
+    0)
 
-WebUI.verifyTextPresent('Test', false)
+WebUI.verifyElementPresent(findTestObject('FormAssembly/div_Test'), 
+    0)
 
-WebUI.verifyTextPresent('babsonTest1@gmail.com', false)
+WebUI.verifyElementPresent(findTestObject('FormAssembly/div_babsonTest1gmailcom'), 
+    0)
 
-WebUI.verifyTextPresent('Online MBA', false)
+WebUI.verifyElementPresent(findTestObject('FormAssembly/div_One-Year MBA'), 
+    0)
 
-WebUI.verifyTextPresent('Fall 2021', false)
+WebUI.verifyElementPresent(findTestObject('FormAssembly/div_Summer 2021'), 
+    0)
 
-WebUI.verifyTextPresent('5555555555', false)
+WebUI.verifyElementPresent(findTestObject('FormAssembly/div_5555555555'), 
+    0)
 
-WebUI.verifyTextPresent('United States', false)
+WebUI.verifyElementPresent(findTestObject('FormAssembly/div_United States'), 
+    0)
 
-WebUI.verifyTextPresent('Massachusetts', false)
+WebUI.verifyElementPresent(findTestObject('FormAssembly/div_Babson'), 
+    0)
 
-WebUI.verifyTextPresent('Babson', false)
+WebUI.verifyElementPresent(findTestObject('FormAssembly/div_00000'), 
+    0)
 
-WebUI.verifyTextPresent('00000', false)
+WebUI.click(findTestObject('FormAssembly/a_Delete'))
+
+WebUI.click(findTestObject('FormAssembly/button_Delete'))
 
 WebUI.closeBrowser()
 
