@@ -1,14 +1,14 @@
 #Author: rkeough@babson.edu
 @FormRegress
 Feature: Form Testing
-  Testing of all forms and dropdown options
+  Testing of all graduate forms and dropdown options
 
   @Forms @Graduate @Submit @152 @Regression
   Scenario: Submit and Verify Graduate Form
     Given I am on graduate admission page
     When I close the privacy policy popup
     And I input the first name last name and email
-    And I select a program of interest
+    And I select a program of interest for grad
     And I select an intended term of enrollment
     And I enter the phone number
     And I select a country and state

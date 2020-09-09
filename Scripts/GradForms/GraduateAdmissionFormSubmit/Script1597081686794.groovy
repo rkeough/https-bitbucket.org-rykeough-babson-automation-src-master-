@@ -23,41 +23,41 @@ WebUI.navigateToUrl('https://test-www.babson.edu/admission/graduate-school/')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('SubmitGradAdmissionForm/PrivacyPolicy'))
+WebUI.click(findTestObject('FormFields/PrivacyPolicy'))
 
-WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputFirstName'), 'Automation')
+WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Automation')
 
-WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputLastName'), 'Test')
+WebUI.setText(findTestObject('FormFields/inputLastName'), 'Test')
 
-WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputEmail'), 'babsonTest1@gmail.com')
+WebUI.setText(findTestObject('FormFields/inputEmail'), 'babsonTest1@gmail.com')
 
-WebUI.click(findTestObject('SubmitGradAdmissionForm/ProgramOfInterest'))
+WebUI.click(findTestObject('FormFields/ProgramOfInterest'))
 
-WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/ProgramOfInterest'), 'tfa_1208', false)
+WebUI.selectOptionByValue(findTestObject('FormFields/ProgramOfInterest'), 'tfa_1208', false)
 
-WebUI.click(findTestObject('SubmitGradAdmissionForm/IntendedTermOfEnrollment'))
+WebUI.click(findTestObject('FormFields/IntendedTermOfEnrollment'))
 
-WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/IntendedTermOfEnrollment'), 'tfa_1217', false)
+WebUI.selectOptionByValue(findTestObject('FormFields/IntendedTermOfEnrollment'), 'tfa_1217', false)
 
-WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputPhoneNumber'), '5555555555')
+WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '5555555555')
 
-WebUI.click(findTestObject('SubmitGradAdmissionForm/selectCountry'))
+WebUI.click(findTestObject('FormFields/selectCountry'))
 
-WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/selectCountry'), 'tfa_1022', false)
+WebUI.selectOptionByValue(findTestObject('FormFields/selectCountry'), 'tfa_1022', false)
 
-WebUI.click(findTestObject('SubmitGradAdmissionForm/selectState'))
+WebUI.click(findTestObject('FormFields/selectState'))
 
-WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/selectState'), 'tfa_748', false)
+WebUI.selectOptionByValue(findTestObject('FormFields/selectState'), 'tfa_748', false)
 
-WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputCity'), 'Babson')
+WebUI.setText(findTestObject('FormFields/inputCity'), 'Babson')
 
-WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputZipCode'), '00000')
+WebUI.setText(findTestObject('FormFields/inputZipCode'), '00000')
 
-WebUI.click(findTestObject('SubmitGradAdmissionForm/clickSubmit'))
+WebUI.click(findTestObject('FormFields/clickSubmit'))
 
-WebUI.click(findTestObject('SubmitGradAdmissionForm/TYPrivacyPolicy'))
+WebUI.click(findTestObject('FormFields/TYPrivacyPolicy'))
 
-WebUI.verifyElementText(findTestObject('SubmitGradAdmissionForm/ThankYouText'), 'Thank You')
+WebUI.verifyElementText(findTestObject('FormFields/ThankYouText'), 'Thank You')
 
 WebUI.closeBrowser()
 
