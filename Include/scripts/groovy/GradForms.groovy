@@ -62,16 +62,13 @@ class GradForms {
 	@When("I input the first name last name and email")
 	def InputFirstNameLastNameAndEmail() {
 		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputFirstName'), 'Automation')
-
 		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputLastName'), 'Test')
-
 		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputEmail'), 'babsonTest1@gmail.com')
 	}
 
-	@When("I select a program of interest")
-	def SelectAProgramOfInterest() {
+	@When("I select a program of interest for grad")
+	def SelectAProgramOfInterestForGrad() {
 		WebUI.click(findTestObject('SubmitGradAdmissionForm/ProgramOfInterest'))
-
 		WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/ProgramOfInterest'), 'tfa_1208', false)
 	}
 	@When("I select an intended term of enrollment")
@@ -128,7 +125,7 @@ class GradForms {
 
 		WebUI.switchToWindowTitle('FormAssembly Enterprise | Babson College : Responses')
 	}
-	
+
 	@When("the text in each form assembly field matches what was entered")
 	def TheTextInFormAssemblyMatchesEntries() {
 		WebUI.verifyElementPresent(findTestObject('FormAssembly/div_Automation'),
@@ -166,5 +163,4 @@ class GradForms {
 
 		WebUI.closeBrowser()
 	}
-	
 }

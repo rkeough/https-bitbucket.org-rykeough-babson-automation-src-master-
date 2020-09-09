@@ -47,14 +47,17 @@ class ga {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+	@Given("I am on the entreprenural form")
+	def OnEntreprenerualForm() {
+		WebUI.openBrowser('')
+		WebUI.navigateToUrl('https://test-www.babson.edu/business-programs-wes/entrepreneurial-leadership-development-programs/')
+		WebUI.maximizeWindow()
 	}
 
-	@When("I check for the (\\d+) in step")
+	@When("I click (.*)")
 	def I_check_for_the_value_in_step(int value) {
-		println value
+		WebUI.click(findTestObject('FormFields/ProgramOfInterest'))
+		WebUI.selectOptionByValue(findTestObject('FormFields/ProgramOfInterest'), 'tfa_1142', false)
 	}
 
 	@Then("I verify the (.*) in step")

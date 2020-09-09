@@ -49,7 +49,7 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/test2/Page_FW Olin G
 WebUI.setText(findTestObject('Object Repository/test2/Page_FW Olin Graduate School of Business  B_65a723/input_City_tfa_17'), 
     'Babson')
 
-WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/selectState'), 'tfa_748', false)
+WebUI.selectOptionByValue(findTestObject('FormFields/selectState'), 'tfa_748', false)
 
 WebUI.setText(findTestObject('Object Repository/test2/Page_FW Olin Graduate School of Business  B_65a723/input_Zip Code_tfa_1036'), 
     '00000')

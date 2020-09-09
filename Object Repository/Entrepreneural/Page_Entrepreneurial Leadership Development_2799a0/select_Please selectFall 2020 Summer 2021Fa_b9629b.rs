@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>IntendedTermOfEnrollment</name>
+   <name>select_Please selectFall 2020 Summer 2021Fa_b9629b</name>
    <tag></tag>
-   <elementGuidId>e1b310d6-ef79-4d4d-811b-71eb9d438206</elementGuidId>
+   <elementGuidId>6e85f258-3c54-4ea3-83c2-9d50755353fb</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#tfa_8</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//select[@id='tfa_8']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <useRalativeImagePath>false</useRalativeImagePath>
+   <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -95,24 +99,6 @@ Fall 2020
  Fall 2021
 
 
- Summer 2020
- Summer 2021
- Summer 2022
- Summer 2023
-
-
- Fall 2020
- Fall 2021
- Fall 2022
- Fall 2023
-
-
-Fall 2020
-Fall 2021
-Fall 2022
- Fall 2023
-
-
 Fall 2020
  Spring 2021
 Fall 2021
@@ -148,16 +134,15 @@ Fall 2020
  Fall 2023
 
 
- Fall 2020
- Spring 2021
- Summer 2021
+
  Fall 2021
- Spring 2022
- Summer 2022
- Fall 2022
- Spring 2023
- Summer 2023
+Fall 2022
  Fall 2023
+ Fall 2024
+
+
+Spring 2021
+Fall 2021
 </value>
    </webElementProperties>
    <webElementProperties>
@@ -200,20 +185,20 @@ Fall 2020
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Phone'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date of Birth'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='International students, include your country code'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Company'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[5]/div/select</value>
+      <value>//div[3]/div/div/select</value>
    </webElementXpaths>
 </WebElementEntity>
