@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>POI</name>
+   <name>Full-Time</name>
    <tag></tag>
-   <elementGuidId>3e9bdbcf-9064-4075-bff3-81859485cb39</elementGuidId>
+   <elementGuidId>f46cae51-b3e8-4004-b542-c3cbe2dd2f5d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//select[@id=&quot;tfa_1044&quot;]
-</value>
+         <value>//*[@id=&quot;tfa_1038&quot;]</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
          <value></value>
       </entry>
    </selectorCollection>

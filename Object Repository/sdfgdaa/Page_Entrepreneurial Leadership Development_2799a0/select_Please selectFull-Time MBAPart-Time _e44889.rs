@@ -1,51 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ProgramOfInterest</name>
+   <name>select_Please selectFull-Time MBAPart-Time _e44889</name>
    <tag></tag>
-   <elementGuidId>004e22fa-d47b-4a61-a8e9-7a6b8f7e2472</elementGuidId>
+   <elementGuidId>35ea54ec-f9c7-428f-9e93-32ff823ad0c5</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'tfa_4' and @name = 'tfa_4' and @title = 'Program of Interest' and (text() = 'Please select...
-Full-Time MBA
-Part-Time MBA
-Online MBA
-One-Year MBA
-Two-Year MBA
-Blended Learning MBA - Miami
-Master in Entrepreneurial Leadership
-Master in Advanced Entrepreneurial Leadership
-Master of Science in Finance
-Master of Science in Business Analytics - Wellesley
-Certificate in Advanced Management
-Undecided' or . = 'Please select...
-Full-Time MBA
-Part-Time MBA
-Online MBA
-One-Year MBA
-Two-Year MBA
-Blended Learning MBA - Miami
-Master in Entrepreneurial Leadership
-Master in Advanced Entrepreneurial Leadership
-Master of Science in Finance
-Master of Science in Business Analytics - Wellesley
-Certificate in Advanced Management
-Undecided')]</value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//select[@id='tfa_4']</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
-      </entry>
-      <entry>
          <key>CSS</key>
+         <value>#tfa_4</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <useRalativeImagePath>false</useRalativeImagePath>
+   <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -93,7 +63,7 @@ Undecided')]</value>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>required</value>
+      <value>calc-SCHOOL required</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -104,15 +74,14 @@ Undecided')]</value>
 Full-Time MBA
 Part-Time MBA
 Online MBA
-One-Year MBA
-Two-Year MBA
-Blended Learning MBA - Miami
 Master in Entrepreneurial Leadership
 Master in Advanced Entrepreneurial Leadership
 Master of Science in Finance
 Master of Science in Business Analytics - Wellesley
 Certificate in Advanced Management
-Undecided</value>
+Undergraduate Program
+Undergraduate Program - Transfer
+Executive Education Open Enrollment Programs</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -161,7 +130,7 @@ Undecided</value>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Phone'])[1]/preceding::select[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Date of Birth'])[1]/preceding::select[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
