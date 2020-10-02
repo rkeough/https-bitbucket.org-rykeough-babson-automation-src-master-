@@ -52,5 +52,17 @@ WebUI.selectOptionByValue(findTestObject('FormFields/ProgramOfInterest'), 'tfa_1
 
 WebUI.click(findTestObject('FormFields/ProgramOfInterest'))
 
-WebUI.verifyElementPresent(findTestObject('FormFields/POI'), 10)
+WebUI.selectOptionByValue(findTestObject('FormFields/ProgramOfInterest'), 'tfa_1037', false)
+
+WebUI.click(findTestObject('FormFields/IntendedTermOfEnrollment'))
+
+WebUI.selectOptionByValue(findTestObject('FormFields/IntendedTermOfEnrollment'), 'tfa_1088', false)
+
+WebUI.selectOptionByValue(findTestObject('FormFields/IntendedTermOfEnrollment'), 'tfa_1041', false)
+
+WebUI.selectOptionByValue(findTestObject('FormFields/IntendedTermOfEnrollment'), 'tfa_1042', false)
+
+WebUI.selectOptionByValue(findTestObject('FormFields/IntendedTermOfEnrollment'), 'tfa_1089', false)
+
+WebUI.selectOptionByLabel(findTestObject('FormFields/IntendedTermOfEnrollment'), 'tfa_1113', false)
 
