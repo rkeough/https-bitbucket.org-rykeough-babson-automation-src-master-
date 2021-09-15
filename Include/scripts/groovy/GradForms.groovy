@@ -35,6 +35,8 @@ import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
+import Grad152
+import UnderGradAdmissionSubmit
 
 import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
@@ -44,26 +46,12 @@ import cucumber.api.java.en.When
 
 
 class GradForms {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
+
 	@Given("I am on graduate admission page")
 	def IAmOnGraduateAdmissionPage() {
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl('https://test-www.babson.edu/admission/graduate-school/')
 		WebUI.maximizeWindow()
-	}
-
-	@When("I close the privacy policy popup")
-	def CloseThePrivacyPopUP() {
-		WebUI.click(findTestObject('SubmitGradAdmissionForm/PrivacyPolicy'))
-	}
-
-	@When("I input the first name last name and email")
-	def InputFirstNameLastNameAndEmail() {
-		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputFirstName'), 'Automation')
-		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputLastName'), 'Test')
-		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputEmail'), 'babsonTest1@gmail.com')
 	}
 
 	@When("I select a program of interest for grad")
@@ -76,10 +64,6 @@ class GradForms {
 		WebUI.click(findTestObject('SubmitGradAdmissionForm/IntendedTermOfEnrollment'))
 
 		WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/IntendedTermOfEnrollment'), 'tfa_1217', false)
-	}
-	@When("I enter the phone number")
-	def EnterThePhoneNumber() {
-		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputPhoneNumber'), '5555555555')
 	}
 	@When("I select a country and state")
 	def SelectACountryAndState() {
