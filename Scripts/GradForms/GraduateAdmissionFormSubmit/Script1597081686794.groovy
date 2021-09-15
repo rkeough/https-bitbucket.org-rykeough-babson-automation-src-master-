@@ -23,7 +23,7 @@ WebUI.navigateToUrl('https://test-www.babson.edu/admission/graduate-school/')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('FormFields/PrivacyPolicy'))
+WebUI.click(findTestObject('FormFields/UnderGradSubmit/PrivacyPolicy'))
 
 WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Automation')
 

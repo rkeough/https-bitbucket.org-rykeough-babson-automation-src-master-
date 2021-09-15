@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TYPrivacyPolicy</name>
+   <name>a_X - CLOSE THIS WINDOW</name>
    <tag></tag>
-   <elementGuidId>e3a48d82-a71d-4e18-928e-06316fd7df62</elementGuidId>
+   <elementGuidId>5ec51903-96db-4f02-a992-1dc7ded85129</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
+         <value>//div[@id='cookie-handler']/div/p/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
          <value>a.boxclose</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <useRalativeImagePath>false</useRalativeImagePath>
+   <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -101,7 +105,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>(//a[contains(@href, '#')])[5]</value>
+      <value>(//a[contains(@href, '#')])[8]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

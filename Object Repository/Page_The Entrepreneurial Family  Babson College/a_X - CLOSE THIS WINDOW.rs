@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TYPrivacyPolicy</name>
+   <name>a_X - CLOSE THIS WINDOW</name>
    <tag></tag>
-   <elementGuidId>e3a48d82-a71d-4e18-928e-06316fd7df62</elementGuidId>
+   <elementGuidId>da99d71c-d1ab-437f-bcda-10d3b0d50e5d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
+         <key>CSS</key>
          <value>a.boxclose</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='cookie-handler']/div/p/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <useRalativeImagePath>false</useRalativeImagePath>
+   <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -108,6 +112,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/p/a</value>
+      <value>//div[4]/div[2]/div/p/a</value>
    </webElementXpaths>
 </WebElementEntity>
