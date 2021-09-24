@@ -9,7 +9,7 @@ Feature: admission/undergraduate-school/
     When I close the privacy policy popup
     And I input the first name last name and email
     And I select the birth month date and year
-    And I input the phone number
+    And I input the undergad phone number
     And I select an admission program of interest
     And I select an admission Term
     And I click Submit on the Undergrad Admission form

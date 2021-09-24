@@ -66,7 +66,7 @@ class UnderGradAdmissionSubmit {
 				false)
 	}
 
-	@When("I input the phone number")
+	@When("I input the undergrad phone number")
 	def InputThePhoneNumber() {
 		WebUI.setText(findTestObject('FormFields/UnderGradSubmit/PhoneAdmissionUnderGrad'), '+1 555-555-5555')
 	}
