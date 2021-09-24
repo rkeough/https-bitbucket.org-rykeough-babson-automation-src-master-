@@ -39,8 +39,8 @@ import cucumber.api.java.en.Then
 
 class Grad152 {
 
-	@Given("I am on academics grad {string} page")
-	public void i_am_on_academics_grad_page(String gradForm) {
+	@Given("I am on grad {string} page")
+	public void GradPage(String gradForm) {
 		WebUI.openBrowser('')
 		WebUI.maximizeWindow()
 		WebUI.navigateToUrl(gradForm)
@@ -53,9 +53,9 @@ class Grad152 {
 
 	@When("I input the first name last name and email for grad form")
 	public void FirstLastNameAndEmailGrad() {
-		WebUI.setText(findTestObject('FormFields/Grad152/input_First Name_tfa_1'), 'Katalon')
-		WebUI.setText(findTestObject('FormFields/Grad152/input_Last Name_tfa_2'), 'Automation')
-		WebUI.setText(findTestObject('FormFields/Grad152/input_Email_tfa_3'), 'babsonTest1@gmail.com')
+		WebUI.setText(findTestObject('FormFields/Grad152/gradFirstName'), 'Katalon')
+		WebUI.setText(findTestObject('FormFields/Grad152/gradLastName'), 'Automation')
+		WebUI.setText(findTestObject('FormFields/Grad152/gradEmail'), 'babsonTest1@gmail.com')
 	}
 
 	@When("I select a program {string}")
@@ -68,29 +68,29 @@ class Grad152 {
 		WebUI.selectOptionByValue(findTestObject('FormFields/Grad152/selectTOE'), term, false)
 	}
 
-	@When("I input the grad phone number")
+	@When("I input the phone number")
 	public void inputPhoneNumber() {
-		WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '5555555555')
+		WebUI.setText(findTestObject('FormFields/Grad152/gradPhone'), '5555555555')
 	}
 
 	@When("I select a country")
 	def SelectACountry() {
-		WebUI.selectOptionByValue(findTestObject('FormFields/select_Please select.AfghanistanAlbaniaAlge_ca9ab1'), 'tfa_1022', false)
+		WebUI.selectOptionByValue(findTestObject('FormFields/selectCountry'), 'tfa_1022', false)
 	}
 
 	@When("I select a state")
 	public void selectState() {
-		WebUI.selectOptionByValue(findTestObject('FormFields/select_Please select.AlabamaAlaskaArizonaAr_92125b'), 'tfa_748', false)
+		WebUI.selectOptionByValue(findTestObject('FormFields/selectState'), 'tfa_748', false)
 	}
 
 	@When("I input a city")
 	public void inputCity() {
-		WebUI.setText(findTestObject('FormFields/input_City_tfa_17'), 'Wellesley')
+		WebUI.setText(findTestObject('FormFields/gradCity'), 'Wellesley')
 	}
 
 	@Then("I input the zip code")
 	public void inputZipZode() {
-		WebUI.setText(findTestObject('FormFields/input_Zip Code_tfa_1036'), '00000')
+		WebUI.setText(findTestObject('FormFields/gradZipCode'), '00000')
 	}
 
 	@When("I click the grad submit button")
@@ -102,5 +102,6 @@ class Grad152 {
 	public void thankYouPage(String thankYou) {
 		def tyurl = WebUI.getUrl()
 		WebUI.verifyEqual(tyurl, thankYou)
+		WebUI.closeBrowser()
 	}
 }

@@ -26,15 +26,15 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('gradForm')
 
-WebUI.click(findTestObject('FormFields/Grad152/virtualPopUp'))
+WebUI.click(findTestObject('FormFields/Grad152/virtualPopUp'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('FormFields/Grad152/a_X - CLOSE THIS WINDOW'))
+WebUI.click(findTestObject('FormFields/Grad152/privacyPopUp'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('FormFields/Grad152/input_First Name_tfa_1'), 'Katalon')
+WebUI.setText(findTestObject('FormFields/Grad152/gradFirstName'), 'Katalon')
 
-WebUI.setText(findTestObject('FormFields/Grad152/input_Last Name_tfa_2'), 'Automation')
+WebUI.setText(findTestObject('FormFields/Grad152/gradLastName'), 'Automation')
 
-WebUI.setText(findTestObject('FormFields/Grad152/input_Email_tfa_3'), 'babsonTest1@gmail.com')
+WebUI.setText(findTestObject('FormFields/Grad152/gradEmail'), 'babsonTest1@gmail.com')
 
 WebUI.selectOptionByValue(findTestObject('FormFields/Grad152/selectPOI'), program, false)
 
@@ -42,19 +42,17 @@ WebUI.selectOptionByValue(findTestObject('FormFields/Grad152/selectTOE'), term, 
 
 WebUI.setText(findTestObject('FormFields/Grad152/gradPhone'), '5555555555')
 
-WebUI.selectOptionByValue(findTestObject('FormFields/select_Please select.AfghanistanAlbaniaAlge_ca9ab1'), 'tfa_1022', false)
+WebUI.selectOptionByValue(findTestObject('FormFields/gradCountry'), 'tfa_1022', false)
 
-WebUI.selectOptionByValue(findTestObject('FormFields/select_Please select.AlabamaAlaskaArizonaAr_92125b'), 'tfa_750', false)
+WebUI.selectOptionByValue(findTestObject('FormFields/gradState'), 'tfa_748', false)
 
-WebUI.selectOptionByValue(findTestObject('FormFields/select_Please select.AlabamaAlaskaArizonaAr_92125b'), 'tfa_748', false)
+WebUI.setText(findTestObject('FormFields/gradCity'), 'Wellesley')
 
-WebUI.setText(findTestObject('FormFields/input_City_tfa_17'), 'Wellesley')
-
-WebUI.setText(findTestObject('FormFields/input_Zip Code_tfa_1036'), '00000')
+WebUI.setText(findTestObject('FormFields/gradZipCode'), '00000')
 
 WebUI.click(findTestObject('FormFields/Grad152/gradSubmit'))
 
 WebUI.getUrl()
 
-
+WebUI.closeBrowser()
 

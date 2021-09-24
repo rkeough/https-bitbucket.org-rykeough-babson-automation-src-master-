@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Last Name_tfa_2</name>
+   <name>gradLastName</name>
    <tag></tag>
    <elementGuidId>23feb1ac-8610-4d4c-bf63-ecbf9012cf93</elementGuidId>
    <selectorCollection>
