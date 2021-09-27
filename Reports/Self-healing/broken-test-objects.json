@@ -1,4 +1,7 @@
 {
+<<<<<<< HEAD
+  "brokenTestObjects" : [ ]
+=======
   "brokenTestObjects": [
     {
       "approved": true,
@@ -61,4 +64,5 @@
       "pathToScreenshot": "Reports/Self-healing/Object Repository/fdfafa/iframe_Country_a-5fz2t6n4ga0p_idRelative.png"
     }
   ]
+>>>>>>> branch 'feature/academy' of https://rykeough@bitbucket.org/rykeough/babson-automation.git
 }
