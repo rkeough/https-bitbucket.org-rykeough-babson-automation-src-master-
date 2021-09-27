@@ -127,6 +127,5 @@ class Forms {
 		WebUI.verifyTextPresent('Babson', false)
 		WebUI.verifyTextPresent('00000', false)
 		WebUI.closeBrowser()
-	
 	}
 }
