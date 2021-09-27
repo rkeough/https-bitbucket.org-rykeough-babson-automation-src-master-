@@ -1,3 +1,4 @@
+package forms
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -35,8 +36,6 @@ import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
-import Grad152
-import UnderGradAdmissionSubmit
 
 import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
@@ -45,8 +44,7 @@ import cucumber.api.java.en.When
 
 
 
-class GradForms {
-
+class Forms {
 	@Given("I am on graduate admission page")
 	def IAmOnGraduateAdmissionPage() {
 		WebUI.openBrowser('')
@@ -54,97 +52,81 @@ class GradForms {
 		WebUI.maximizeWindow()
 	}
 
-	@When("I select a program of interest for grad")
-	def SelectAProgramOfInterestForGrad() {
+	@When("I close the privacy policy popup")
+	def CloseThePrivacyPolicyPopup() {
+		WebUI.click(findTestObject('SubmitGradAdmissionForm/PrivacyPolicy'))
+	}
+
+	@When("I input the first name last name email phone number and zipcode fields on the form")
+	def InputTheTextFieldsOnGradAdmissionForm() {
+		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputFirstName'), 'Automation')
+		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputLastName'), 'Test')
+		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputEmail'), 'babsonTest1@gmail.com')
+		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputPhoneNumber'), '5555555555')
+		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputCity'), 'Babson')
+		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputZipCode'), '00000')
+	}
+
+	@When("I select a program of interest")
+	def SelectAProgramOfInterest() {
 		WebUI.click(findTestObject('SubmitGradAdmissionForm/ProgramOfInterest'))
 		WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/ProgramOfInterest'), 'tfa_1208', false)
 	}
+
 	@When("I select an intended term of enrollment")
 	def SelectAnIntendedTermOfEnrollment() {
 		WebUI.click(findTestObject('SubmitGradAdmissionForm/IntendedTermOfEnrollment'))
-
 		WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/IntendedTermOfEnrollment'), 'tfa_1217', false)
 	}
+
 	@When("I select a country and state")
-	def SelectACountryAndState() {
+	def SelectACountry() {
 		WebUI.click(findTestObject('SubmitGradAdmissionForm/selectCountry'))
-
 		WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/selectCountry'), 'tfa_1022', false)
-
 		WebUI.click(findTestObject('SubmitGradAdmissionForm/selectState'))
-
 		WebUI.selectOptionByValue(findTestObject('SubmitGradAdmissionForm/selectState'), 'tfa_748', false)
 	}
-	@When("I enter a city and zip code")
-	def EnterACityAndZipCode() {
-		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputCity'), 'Babson')
 
-		WebUI.setText(findTestObject('SubmitGradAdmissionForm/inputZipCode'), '00000')
-	}
 	@When("I click submit")
 	def ClickSubmit() {
 		WebUI.click(findTestObject('SubmitGradAdmissionForm/clickSubmit'))
 	}
-	@When("I am taken to the thank you page")
-	def IAmTakenToTheThankYouPage() {
-		WebUI.verifyElementText(findTestObject('SubmitGradAdmissionForm/ThankYouText'), 'Thank You')
 
+	@When("I am taken to the thank you page")
+	def GradAdmissionThankYouPage() {
+		WebUI.click(findTestObject('SubmitGradAdmissionForm/TYPrivacyPolicy'))
+		WebUI.verifyElementText(findTestObject('SubmitGradAdmissionForm/ThankYouText'), 'Thank You')
 		WebUI.closeBrowser()
 	}
-	@When("I open Form Assembly Grad Form")
+	@When("I open Form Assembly")
 	def OpenFormAssembly() {
 		WebUI.openBrowser('')
-
-		WebUI.navigateToUrl('https://babson.tfaforms.net/reports/view/152')
-
+		WebUI.navigateToUrl('https://babson.tfaforms.net/users/login')
 		WebUI.maximizeWindow()
-		WebUI.setText(findTestObject('FormAssembly/input_Username or Email_dataUserusername'),
-				'rkeough@babson.edu')
+		WebUI.setText(findTestObject('Object Repository/FormAssembly/inpuyFAEmail'), 'rkeough@babson.edu')
+		WebUI.setEncryptedText(findTestObject('Object Repository/FormAssembly/inputFAPassword'), 'GnaSFrYIDO8GMIhAnn2iDQ==')
+		WebUI.click(findTestObject('Object Repository/FormAssembly/FALoginButton'))
+	}
 
-		WebUI.setEncryptedText(findTestObject('FormAssembly/input_Show_dataUserpassword'),
-				'GnaSFrYIDO8GMIhAnn2iDQ==')
-		WebUI.click(findTestObject('FormAssembly/FALoginSubmit'))
+	@When("open the form details")
+	def openTheFormDetails() {
+		WebUI.click(findTestObject('Object Repository/FormAssembly/Form152Entries'))
+	}
 
-		WebUI.click(findTestObject('FormAssembly/FARecord'))
-
+	@Then("the text in each form assembly field matches what was entered")
+	def TextinFAMatchForm() {
+		WebUI.click(findTestObject('Object Repository/FormAssembly/SelectEntry'))
 		WebUI.switchToWindowTitle('FormAssembly Enterprise | Babson College : Responses')
-	}
-
-	@When("the text in each form assembly field matches what was entered")
-	def TheTextInFormAssemblyMatchesEntries() {
-		WebUI.verifyElementPresent(findTestObject('FormAssembly/div_Automation'),
-				0)
-
-		WebUI.verifyElementPresent(findTestObject('FormAssembly/div_Test'),
-				0)
-
-		WebUI.verifyElementPresent(findTestObject('FormAssembly/div_babsonTest1gmailcom'),
-				0)
-
-		WebUI.verifyElementPresent(findTestObject('FormAssembly/div_One-Year MBA'),
-				0)
-
-		WebUI.verifyElementPresent(findTestObject('FormAssembly/div_Summer 2021'),
-				0)
-
-		WebUI.verifyElementPresent(findTestObject('FormAssembly/div_5555555555'),
-				0)
-
-		WebUI.verifyElementPresent(findTestObject('FormAssembly/div_United States'),
-				0)
-
-		WebUI.verifyElementPresent(findTestObject('FormAssembly/div_Babson'),
-				0)
-
-		WebUI.verifyElementPresent(findTestObject('FormAssembly/div_00000'),
-				0)
-	}
-	@When("I delete the record on form assembly")
-	def DeleteRecordOnFormAssembly() {
-		WebUI.click(findTestObject('FormAssembly/a_Delete'))
-
-		WebUI.click(findTestObject('FormAssembly/button_Delete'))
-
+		WebUI.verifyTextPresent('Automation', false)
+		WebUI.verifyTextPresent('Test', false)
+		WebUI.verifyTextPresent('babsonTest1@gmail.com', false)
+		WebUI.verifyTextPresent('Online MBA', false)
+		WebUI.verifyTextPresent('Fall 2021', false)
+		WebUI.verifyTextPresent('5555555555', false)
+		WebUI.verifyTextPresent('United States', false)
+		WebUI.verifyTextPresent('Massachusetts', false)
+		WebUI.verifyTextPresent('Babson', false)
+		WebUI.verifyTextPresent('00000', false)
 		WebUI.closeBrowser()
 	}
 }
