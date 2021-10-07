@@ -19,6 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.thoughtworks.selenium.webdriven.commands.SelectOption as SelectOption
 import com.sun.org.apache.bcel.internal.generic.Select as Select
 import com.kms.katalon.core.webui.keyword.builtin.SelectOptionByIndexKeyword as SelectOptionByIndexKeyword
+import java.lang.String as String
 
 WebUI.openBrowser('')
 
@@ -30,19 +31,19 @@ WebUI.click(findTestObject('FormFields/Grad152/virtualPopUp'), FailureHandling.C
 
 WebUI.click(findTestObject('FormFields/Grad152/privacyPopUp'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('FormFields/Grad152/gradFirstName'), 'Katalon')
+WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Katalon')
 
-WebUI.setText(findTestObject('FormFields/Grad152/gradLastName'), 'Automation')
+WebUI.setText(findTestObject('FormFields/inputLastName'), 'Automation')
 
-WebUI.setText(findTestObject('FormFields/Grad152/gradEmail'), 'babsonTest1@gmail.com')
+WebUI.setText(findTestObject('FormFields/inputEmail'), 'babsonTest1@gmail.com')
 
 WebUI.selectOptionByValue(findTestObject('FormFields/Grad152/selectPOI'), program, false)
 
 WebUI.selectOptionByValue(findTestObject('FormFields/Grad152/selectTOE'), term, false)
 
-WebUI.setText(findTestObject('FormFields/Grad152/gradPhone'), '5555555555')
+WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '0000000000')
 
-WebUI.selectOptionByValue(findTestObject('FormFields/gradCountry'), 'tfa_1022', false)
+WebUI.selectOptionByLabel(findTestObject('FormFields/selectCountry'), 'United States', false)
 
 WebUI.selectOptionByValue(findTestObject('FormFields/gradState'), 'tfa_748', false)
 
@@ -50,7 +51,7 @@ WebUI.setText(findTestObject('FormFields/gradCity'), 'Wellesley')
 
 WebUI.setText(findTestObject('FormFields/gradZipCode'), '00000')
 
-WebUI.click(findTestObject('FormFields/Grad152/gradSubmit'))
+WebUI.click(findTestObject('FormFields/clickSubmit'))
 
 WebUI.getUrl()
 

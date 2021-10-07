@@ -46,16 +46,19 @@ class Grad152 {
 		WebUI.navigateToUrl(gradForm)
 	}
 
-	@When("I close the virutal popup")
+	@When("I close the virtual popup")
 	public void closeVirtualPopup() {
 		WebUI.click(findTestObject('FormFields/Grad152/virtualPopUp'))
 	}
 
-	@When("I input the first name last name and email for grad form")
-	public void FirstLastNameAndEmailGrad() {
-		WebUI.setText(findTestObject('FormFields/Grad152/gradFirstName'), 'Katalon')
-		WebUI.setText(findTestObject('FormFields/Grad152/gradLastName'), 'Automation')
-		WebUI.setText(findTestObject('FormFields/Grad152/gradEmail'), 'babsonTest1@gmail.com')
+	@When("I input the first and last name on the form")
+	public void FirstLastName() {
+		WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Katalon')
+		WebUI.setText(findTestObject('FormFields/inputLastName'), 'Automation')
+	}
+	@When("I input an email address")
+	public void inputEmail() {
+		WebUI.setText(findTestObject('FormFields/inputEmail'), 'babsonTest1@gmail.com')
 	}
 
 	@When("I select a program {string}")
@@ -68,14 +71,14 @@ class Grad152 {
 		WebUI.selectOptionByValue(findTestObject('FormFields/Grad152/selectTOE'), term, false)
 	}
 
-	@When("I input the phone number")
+	@When("I input a phone number")
 	public void inputPhoneNumber() {
-		WebUI.setText(findTestObject('FormFields/Grad152/gradPhone'), '5555555555')
+		WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '0000000000')
 	}
 
 	@When("I select a country")
 	def SelectACountry() {
-		WebUI.selectOptionByValue(findTestObject('FormFields/selectCountry'), 'tfa_1022', false)
+		WebUI.selectOptionByLabel(findTestObject('FormFields/selectCountry'), 'United States', false)
 	}
 
 	@When("I select a state")
@@ -93,9 +96,9 @@ class Grad152 {
 		WebUI.setText(findTestObject('FormFields/gradZipCode'), '00000')
 	}
 
-	@When("I click the grad submit button")
-	public void clickGradSubmit() {
-		WebUI.click(findTestObject('FormFields/Grad152/gradSubmit'))
+	@When("I click the submit button")
+	public void clickSubmit() {
+		WebUI.click(findTestObject('FormFields/clickSubmit'))
 	}
 
 	@Then("I am on the correct {string} page")
