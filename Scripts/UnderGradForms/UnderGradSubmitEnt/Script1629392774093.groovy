@@ -29,7 +29,7 @@ WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Katalon36')
 
 WebUI.setText(findTestObject('FormFields/inputLastName'), 'Test')
 
-WebUI.setText(findTestObject('FormFields/inputEmail'), 'babsonTest1@gmail.com')
+WebUI.setText(findTestObject('null'), 'babsonTest1@gmail.com')
 
 WebUI.click(findTestObject('FormFields/ProgramOfInterest'))
 
@@ -39,14 +39,14 @@ WebUI.click(findTestObject('FormFields/IntendedTermOfEnrollment'))
 
 WebUI.selectOptionByValue(findTestObject('FormFields/IntendedTermOfEnrollment'), 'tfa_1166', false)
 
-WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '5555555555')
+WebUI.setText(findTestObject('null'), '5555555555')
 
 WebUI.click(findTestObject('test2/Page_FW Olin Graduate School of Business  B_65a723/select_Please selectAfghanistanAlbaniaAlger_baf728'))
 
 WebUI.selectOptionByValue(findTestObject('test2/Page_FW Olin Graduate School of Business  B_65a723/select_Please selectAfghanistanAlbaniaAlger_baf728'), 
     'tfa_1395', false)
 
-WebUI.click(findTestObject('FormFields/clickSubmit'))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('FormFields/TYPrivacyPolicy'))
 

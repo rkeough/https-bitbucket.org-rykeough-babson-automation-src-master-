@@ -27,7 +27,7 @@ WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Katalon')
 
 WebUI.setText(findTestObject('FormFields/inputLastName'), 'Automation')
 
-WebUI.setText(findTestObject('FormFields/inputEmail'), 'aaa@babson.edu')
+WebUI.setText(findTestObject('null'), 'aaa@babson.edu')
 
 WebUI.click(findTestObject('FormFields/ProgramOfInterest'))
 
@@ -39,9 +39,9 @@ WebUI.selectOptionByValue(findTestObject('FormFields/IntendedTermOfEnrollment'),
 
 WebUI.setText(findTestObject('FormFields/inputDateofBirth'), '01/01/2001')
 
-WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '5555555555')
+WebUI.setText(findTestObject('null'), '5555555555')
 
-WebUI.click(findTestObject('FormFields/clickSubmit'))
+WebUI.click(findTestObject('null'))
 
 WS.sendRequest(findTestObject('FormFields/UnderGradGet'))
 

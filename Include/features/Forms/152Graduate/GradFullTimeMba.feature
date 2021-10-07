@@ -5,12 +5,12 @@ Feature: admission/graduate-school/mba/full-time-mba/
   @Grad @152
   Scenario Outline: Submit Grad form
     Given I am on grad "<gradForm>" page
-    And I close the privacy policy popup
-    And I input the first name last name and email for grad form
+    When I close the privacy policy popup
+    And I input the first name last name and email for the form
     And I select a program "<program>"
     And I select a term "<term>"
-    And I input the phone number
-    And I select a country
+    And I input the grad phone number
+    And I select a grad country
     And I select a state
     And I input a city
     And I input the zip code
