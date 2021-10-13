@@ -6,6 +6,7 @@
    <UUID>d6f3c939-47ff-4eb1-8e54-bd42670ad5e1</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\rkeough\babson-automation\babson-automation.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
