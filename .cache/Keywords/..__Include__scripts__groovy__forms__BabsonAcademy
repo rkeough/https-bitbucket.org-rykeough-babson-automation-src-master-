@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "3A4A3021DD7BFCACB8C2927EBB404C38",
+  "keywordFileContentHash": "BD46EAE4E4991ED6E192A50A6CE26088",
   "keywordClasses": [
     {
       "name": "forms.BabsonAcademy",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+jjkl,Chrome 94.0.4606.81,,,2021-10-15 13:20:48,2021-10-15 13:25:31,4m - 43.351s,FAILED
+,,,,,,,
+Test Cases/Entrepreneurial_Dropdowns,Chrome 94.0.4606.81,,,2021-10-15 13:24:21,2021-10-15 13:25:31,1m - 9.788s,FAILED
+"openBrowser("""")",Chrome 94.0.4606.81,,,2021-10-15 13:24:21,2021-10-15 13:24:23,1.901s,PASSED
+"navigateToUrl(""https://test-www.babson.edu/business-programs-wes/entrepreneurial-leadership-development-programs/"")",Chrome 94.0.4606.81,,,2021-10-15 13:24:23,2021-10-15 13:24:25,2.200s,PASSED
+maximizeWindow(),Chrome 94.0.4606.81,,,2021-10-15 13:24:25,2021-10-15 13:24:25,0.137s,PASSED
+"click(findTestObject(""FormFields/ProgramOfInterest""))",Chrome 94.0.4606.81,,,2021-10-15 13:24:25,2021-10-15 13:24:26,0.939s,PASSED
+"selectOptionByValue(findTestObject(""Dopdown/EntrepreneurialLeadershipDropdownOptions/POIDropDown""), ""tfa_1037"", false)",Chrome 94.0.4606.81,,,2021-10-15 13:24:26,2021-10-15 13:24:58,31.940s,PASSED
+"click(findTestObject(""FormFields/IntendedTermOfEnrollment""))",Chrome 94.0.4606.81,,,2021-10-15 13:24:58,2021-10-15 13:24:59,0.513s,PASSED
+"selectOptionByValue(findTestObject(""Dopdown/EntrepreneurialLeadershipDropdownOptions/TOEOption""), ""tfa_1088"", false)",Chrome 94.0.4606.81,,,2021-10-15 13:24:59,2021-10-15 13:25:31,32.138s,FAILED

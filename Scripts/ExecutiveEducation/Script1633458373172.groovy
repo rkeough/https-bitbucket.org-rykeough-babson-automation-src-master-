@@ -25,3 +25,62 @@ WebUI.setText(findTestObject('FormFields/ExecutiveEducation/Company'), 'Babson')
 
 WebUI.click(findTestObject('Object Repository/hlhjhkjhkj/input_How can we help you_submit_button'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.babson.edu/academics/executive-education/')
+
+WebUI.setText(findTestObject('Object Repository/FormFields/ExecutiveEducation/Company'), 'Babson')
+
+WebUI.click(findTestObject('ExecutiveEducation/input_How can we help you_submit_button'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.babson.edu/academics/executive-education/custom-programs/')
+
+WebUI.click(findTestObject('ExecutiveEducation/a_X - CLOSE THIS WINDOW'))
+
+WebUI.selectOptionByValue(findTestObject('ExecutiveEducation/groupSize'), 'tfa_7', true)
+
+WebUI.selectOptionByValue(findTestObject('ExecutiveEducation/groupSize'), 'tfa_8', true)
+
+WebUI.selectOptionByValue(findTestObject('ExecutiveEducation/groupSize'), 'tfa_9', true)
+
+WebUI.setText(findTestObject('ExecutiveEducation/DescriptionBox'), 'Automation')
+
+WebUI.navigateToUrl('https://www.babson.edu/academics/executive-education/')
+
+WebUI.setText(findTestObject('Object Repository/FormFields/ExecutiveEducation/Company'), 'Babson')
+
+WebUI.click(findTestObject('Object Repository/hlhjhkjhkj/input_How can we help you_submit_button'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.babson.edu/academics/executive-education/')
+
+WebUI.setText(findTestObject('Object Repository/FormFields/ExecutiveEducation/Company'), 'Babson')
+
+WebUI.click(findTestObject('Object Repository/ExecutiveEducation/input_How can we help you_submit_button'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.babson.edu/academics/executive-education/custom-programs/')
+
+WebUI.click(findTestObject('Object Repository/ExecutiveEducation/a_X - CLOSE THIS WINDOW'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/ExecutiveEducation/groupSize'), 'tfa_7', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/ExecutiveEducation/groupSize'), 'tfa_8', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/ExecutiveEducation/groupSize'), 'tfa_9', true)
+
+WebUI.setText(findTestObject('Object Repository/ExecutiveEducation/DescriptionBox'), 'Automation')
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.babson.edu/academics/executive-education/executive-leadership-programs/')
+
+WebUI.click(findTestObject('Object Repository/hkjhkhkj/a_X - CLOSE THIS WINDOW'))
+
+WebUI.selectOptionByValue(findTestObject('FormFields/ExecutiveEducation/selectExecutiveInterest'), 
+    'tfa_6', true)
+

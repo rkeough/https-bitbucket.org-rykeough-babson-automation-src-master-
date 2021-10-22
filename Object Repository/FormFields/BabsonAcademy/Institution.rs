@@ -6,6 +6,10 @@
    <elementGuidId>a4fcf654-22e3-4e6b-ad97-3de194cf4c22</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//input[@id='tfa_3']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#tfa_3</value>
       </entry>
@@ -13,12 +17,8 @@
          <key>BASIC</key>
          <value>//input[@aria-required = 'true' and @type = 'text' and @name = 'tfa_3' and @class = 'required']</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='tfa_3']</value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
