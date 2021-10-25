@@ -61,13 +61,12 @@ class ExecutiveEducation {
 	public void DescribeField() {
 		WebUI.setText(findTestObject('ExecutiveEducation/DescriptionBox'), 'Automation')
 	}
-	
+
 	@When("I select an executive program of {string}")
 	public void SelectExecutiveProgram(interest) {
 		WebUI.selectOptionByValue(findTestObject('FormFields/ExecutiveEducation/selectExecutiveInterest'),
-	interest, true)
-		
-	}	
+				interest, true)
+	}
 }
 
 
