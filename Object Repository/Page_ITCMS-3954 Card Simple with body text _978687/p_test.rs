@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
+<<<<<<< HEAD
+<<<<<<< HEAD:Object Repository/Page_ITCMS-3954 Card Simple with body text _978687/p_test.rs
    <name>p_test</name>
    <tag></tag>
    <elementGuidId>6c67ef31-ff3f-4cdc-83b3-f1a50f1f42b1</elementGuidId>
+=======
+   <name>h1_Thank You</name>
+   <tag></tag>
+   <elementGuidId>e12a586b-21c2-470d-bfe2-a61e6e0bedea</elementGuidId>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9:Object Repository/test2/Page_Thank You  Babson College/h1_Thank You.rs
+=======
+   <name>p_test</name>
+   <tag></tag>
+   <elementGuidId>6c67ef31-ff3f-4cdc-83b3-f1a50f1f42b1</elementGuidId>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -49,7 +61,15 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
+<<<<<<< HEAD
+<<<<<<< HEAD:Object Repository/Page_ITCMS-3954 Card Simple with body text _978687/p_test.rs
       <value>(.//*[normalize-space(text()) and normalize-space(.)='ITCMS-3954 Card Simple with body text options NEW'])[1]/following::p[1]</value>
+=======
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='&lt; back to One-Year MBA'])[1]/following::h1[1]</value>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9:Object Repository/test2/Page_Thank You  Babson College/h1_Thank You.rs
+=======
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ITCMS-3954 Card Simple with body text options NEW'])[1]/following::p[1]</value>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

@@ -5,17 +5,31 @@ Feature: academics/graduate-school
   @Grad @152
   Scenario Outline: Submit Grad form
     Given I am on grad "<gradForm>" page
+<<<<<<< HEAD
     When I close the virutal popup
     And I close the privacy policy popup
     And I input the first name last name and email for grad form
     And I select a program "<program>"
     And I select a term "<term>"
     And I input the phone number
+=======
+    When I close the virtual popup
+    And I close the privacy policy popup
+    And I input the first and last name on the form
+    And I input an email address
+    And I select a program "<program>"
+    And I select a term "<term>"
+    And I input a phone number
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
     And I select a country
     And I select a state
     And I input a city
     And I input the zip code
+<<<<<<< HEAD
     And I click the grad submit button
+=======
+    And I click the submit button
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
     Then I am on the correct "<thankYou>" page
 
     Examples: 

@@ -1,3 +1,72 @@
 {
+<<<<<<< HEAD
   "brokenTestObjects" : [ ]
+=======
+<<<<<<< HEAD
+  "brokenTestObjects" : [ ]
+=======
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/FormFields/inputPhoneNumber",
+      "brokenLocator": "//input[@id\u003d\u0027tfa_12\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[6]/div/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/FormFields/inputPhoneNumber_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/FormFields/TYPrivacyPolicy",
+      "brokenLocator": "a.boxclose",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027cookie-handler\u0027]/div/p/a",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/FormFields/TYPrivacyPolicy_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/FormFields/Grad152/select_Please select.Full-Time MBAPart-Time_8d04c0",
+      "brokenLocator": "//select[@id\u003d\u0027${id}\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//select[@id\u003d\u0027tfa_4\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/FormFields/Grad152/select_Please select.Full-Time MBAPart-Time_8d04c0_attributes.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/FormFields/Grad152/virtualPopUp",
+      "brokenLocator": "//div[@id\u003d\u0027cookie-handler2\u0027]/div/p/a",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*[@href \u003d \u0027#\u0027 and (text() \u003d \u0027X - CLOSE THIS WINDOW\u0027 or . \u003d \u0027X - CLOSE THIS WINDOW\u0027)]",
+      "proposedLocatorMethod": "BASIC",
+      "recoveryMethod": "BASIC",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/FormFields/Grad152/virtualPopUp_BASIC.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/FormFields/selectCountry",
+      "brokenLocator": "//select[@id\u003d\u0027tfa_798\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Country\u0027])[1]/following::select[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/FormFields/selectCountry_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/fdfafa/iframe_Country_a-5fz2t6n4ga0p",
+      "brokenLocator": "//iframe[@name\u003d\u0027a-5fz2t6n4ga0p\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027tfa_captcha_text\u0027]/div/div/iframe",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/fdfafa/iframe_Country_a-5fz2t6n4ga0p_idRelative.png"
+    }
+  ]
+>>>>>>> branch 'feature/academy' of https://rykeough@bitbucket.org/rykeough/babson-automation.git
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
 }

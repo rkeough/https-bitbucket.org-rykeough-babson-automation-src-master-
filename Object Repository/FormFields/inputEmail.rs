@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>inputEmail</name>
+<<<<<<< HEAD
+   <name>Organization</name>
    <tag></tag>
-   <elementGuidId>8545ff10-06bc-474f-a2db-b0f998ce8e64</elementGuidId>
+   <elementGuidId>099f3112-6cc1-4ecf-ad1c-edd6225cf4fb</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#tfa_3</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//input[@id='tfa_3']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <useRalativeImagePath>false</useRalativeImagePath>
+=======
+   <name>inputEmail</name>
+   <tag></tag>
+   <elementGuidId>c5b4b34c-97f2-4ed2-8c87-5ce44b5173f5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @class = 'validate-email required' and contains(@title, 'Email')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>input.validate-email.required</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
+   <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -20,6 +47,16 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
+<<<<<<< HEAD
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-required</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+=======
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
@@ -29,6 +66,7 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+<<<<<<< HEAD
       <name>id</name>
       <type>Main</type>
       <value>tfa_3</value>
@@ -41,25 +79,18 @@
       <value>tfa_3</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-required</name>
-      <type>Main</type>
-      <value>true</value>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Email</value>
+      <value>Organization</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>validate-email required</value>
+      <value>required</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -89,4 +120,17 @@
       <type>Main</type>
       <value>//div[3]/div/input</value>
    </webElementXpaths>
+=======
+      <name>class</name>
+      <type>Main</type>
+      <value>validate-email required</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Email</value>
+   </webElementProperties>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
 </WebElementEntity>

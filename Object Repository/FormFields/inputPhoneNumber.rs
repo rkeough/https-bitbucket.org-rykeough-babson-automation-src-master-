@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>inputPhoneNumber</name>
+<<<<<<< HEAD
+   <name>gradPhone</name>
    <tag></tag>
-   <elementGuidId>7d60f61b-cace-4414-a38b-d6f4bd0fc915</elementGuidId>
+   <elementGuidId>fe147db5-6ce4-47e5-bb83-1c2dfa857644</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>//input[@id='tfa_12']</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tfa_12</value>
+=======
+   <name>inputPhoneNumber</name>
+   <tag></tag>
+   <elementGuidId>37cd1ffb-585a-41bb-8272-c5de7cf3f18b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@title='Phone']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @title = 'Phone' and @class = 'required']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#tfa_244</value>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <useRalativeImagePath>false</useRalativeImagePath>
+   <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -20,6 +42,16 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
+<<<<<<< HEAD
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-required</name>
+      <type>Main</type>
+      <value>true</value>
+   </webElementProperties>
+   <webElementProperties>
+=======
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
@@ -29,6 +61,7 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+<<<<<<< HEAD
       <name>id</name>
       <type>Main</type>
       <value>tfa_12</value>
@@ -43,13 +76,6 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>aria-required</name>
-      <type>Main</type>
-      <value>true</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>aria-describedby</name>
       <type>Main</type>
       <value>tfa_12-HH</value>
@@ -57,11 +83,14 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+=======
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
       <name>title</name>
       <type>Main</type>
       <value>Phone</value>
    </webElementProperties>
    <webElementProperties>
+<<<<<<< HEAD
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
@@ -96,4 +125,12 @@
       <type>Main</type>
       <value>//div[6]/div/input</value>
    </webElementXpaths>
+=======
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>required</value>
+   </webElementProperties>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
 </WebElementEntity>

@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
+<<<<<<< HEAD
+   <name>input_Postal Code_submit_button</name>
+   <tag></tag>
+   <elementGuidId>d4a4ae9f-ca96-4684-804a-96ff5be63e05</elementGuidId>
+=======
    <name>clickSubmit</name>
    <tag></tag>
-   <elementGuidId>747a2298-f412-4cee-a334-c5b2f58c0172</elementGuidId>
+   <elementGuidId>0fff982b-161c-40c7-8f8c-ac1c8c31a67a</elementGuidId>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>//input[@id='submit_button']</value>
       </entry>
+<<<<<<< HEAD
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+=======
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'submit' and @data-label = 'Submit' and @class = 'primaryAction' and @id = 'submit_button']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#submit_button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -27,14 +47,22 @@
       <value>submit</value>
    </webElementProperties>
    <webElementProperties>
+<<<<<<< HEAD
       <isSelected>false</isSelected>
+=======
+      <isSelected>true</isSelected>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
       <matchCondition>equals</matchCondition>
       <name>data-label</name>
       <type>Main</type>
       <value>Submit</value>
    </webElementProperties>
    <webElementProperties>
+<<<<<<< HEAD
       <isSelected>false</isSelected>
+=======
+      <isSelected>true</isSelected>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
