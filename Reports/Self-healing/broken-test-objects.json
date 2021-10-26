@@ -2,6 +2,9 @@
 <<<<<<< HEAD
   "brokenTestObjects" : [ ]
 =======
+<<<<<<< HEAD
+  "brokenTestObjects" : [ ]
+=======
   "brokenTestObjects": [
     {
       "approved": true,
@@ -65,4 +68,5 @@
     }
   ]
 >>>>>>> branch 'feature/academy' of https://rykeough@bitbucket.org/rykeough/babson-automation.git
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
 }

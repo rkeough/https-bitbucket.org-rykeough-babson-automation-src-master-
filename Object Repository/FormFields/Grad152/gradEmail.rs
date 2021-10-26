@@ -13,10 +13,13 @@
          <key>CSS</key>
          <value>#tfa_3</value>
       </entry>
+<<<<<<< HEAD
+=======
       <entry>
          <key>BASIC</key>
          <value>//*[@type = 'text' and @id = 'tfa_3' and @name = 'tfa_3' and @title = 'Email']</value>
       </entry>
+>>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
