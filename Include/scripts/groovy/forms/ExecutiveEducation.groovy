@@ -50,5 +50,24 @@ class ExecutiveEducation {
 	public void inputCompany() {
 		WebUI.setText(findTestObject('FormFields/ExecutiveEducation/Company'), 'Babson')
 	}
+
+	@When("I select a group {string}")
+	public void GroupSize(String groupSize) {
+		WebUI.selectOptionByValue(findTestObject('ExecutiveEducation/groupSize'), groupSize,
+				true)
+	}
+
+	@When("I fill out the descibe field")
+	public void DescribeField() {
+		WebUI.setText(findTestObject('ExecutiveEducation/DescriptionBox'), 'Automation')
+	}
+
+	@When("I select an executive program of {string}")
+	public void SelectExecutiveProgram(interest) {
+		WebUI.selectOptionByValue(findTestObject('FormFields/ExecutiveEducation/selectExecutiveInterest'),
+				interest, true)
+	}
 }
-	
+
+
+

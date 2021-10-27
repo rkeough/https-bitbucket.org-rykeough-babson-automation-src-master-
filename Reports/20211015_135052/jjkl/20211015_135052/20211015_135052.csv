@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+jjkl,Chrome 94.0.4606.81,,,2021-10-15 13:50:58,2021-10-15 13:53:47,2m - 48.931s,FAILED
+,,,,,,,
+Test Cases/Brochures/Leadership_and_Influence,Chrome 94.0.4606.81,,,2021-10-15 13:53:06,2021-10-15 13:53:47,40.907s,FAILED
+"openBrowser("""")",Chrome 94.0.4606.81,,,2021-10-15 13:53:06,2021-10-15 13:53:08,1.790s,PASSED
+"navigateToUrl(""https://www.babson.edu/academics/executive-education/open-enrollment-programs/the-entrepreneurial-family/"")",Chrome 94.0.4606.81,,,2021-10-15 13:53:08,2021-10-15 13:53:11,2.939s,PASSED
+"click(findTestObject(""Object Repository/Page_The Entrepreneurial Family  Babson College/a_X - CLOSE THIS WINDOW""))",Chrome 94.0.4606.81,,,2021-10-15 13:53:11,2021-10-15 13:53:11,0.660s,PASSED
+"setText(findTestObject(""Object Repository/Page_The Entrepreneurial Family  Babson College/input_First Name_tfa_1""), ""Katalon"")",Chrome 94.0.4606.81,,,2021-10-15 13:53:11,2021-10-15 13:53:47,35.510s,FAILED
