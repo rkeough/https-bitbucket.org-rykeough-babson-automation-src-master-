@@ -13,8 +13,7 @@ Feature: academics/executive-education
     And I select an executive program of "<interest>"
     And I click the submit button
     And I am on the correct "<thankYou>" page
-    And I get the undergrad request
-    Then I delete the undergrad record
+ 
 
  | https://www.babson.edu/academics/executive-education/executive-leadership-programs/ | tfa_6    | https://www.babson.edu/academics/executive-education/executive-leadership-programs/thank-you/ |
       | https://www.babson.edu/academics/executive-education/executive-leadership-programs/ | tfa_49   | https://www.babson.edu/academics/executive-education/executive-leadership-programs/thank-you/ |

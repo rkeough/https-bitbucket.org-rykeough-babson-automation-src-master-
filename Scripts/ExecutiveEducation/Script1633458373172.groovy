@@ -81,6 +81,7 @@ WebUI.navigateToUrl('https://www.babson.edu/academics/executive-education/execut
 
 WebUI.click(findTestObject('Object Repository/hkjhkhkj/a_X - CLOSE THIS WINDOW'))
 
-WebUI.selectOptionByValue(findTestObject('FormFields/ExecutiveEducation/selectExecutiveInterest'), 
-    'tfa_6', true)
+WebUI.selectOptionByValue(findTestObject('FormFields/ExecutiveEducation/selectExecutiveInterest'), 'tfa_6', true)
+
+WebUI.click(findTestObject('FormFields/ExecutiveEducation/a_X - CLOSE THIS WINDOW'))
 

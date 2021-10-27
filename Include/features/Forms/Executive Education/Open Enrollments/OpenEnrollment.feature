@@ -14,8 +14,7 @@ Feature: academics/executive-education
     And I click the submit button
     And I am on the correct "<thankYou>" page
     And I get the undergrad request
-    Then I delete the undergrad record
-    Then I delete the undergrad record
+  
 
     Examples: 
       | gradForm                                                                       | interest | thankYou                                                                             |
