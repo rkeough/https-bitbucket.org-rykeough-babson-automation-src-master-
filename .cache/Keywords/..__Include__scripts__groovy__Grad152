@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "4863A0FBE721A8582A16856C9BADD601",
+  "keywordFileContentHash": "5F36F12C918683E058D388BC3944161B",
   "keywordClasses": [
     {
       "name": "Grad152",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
