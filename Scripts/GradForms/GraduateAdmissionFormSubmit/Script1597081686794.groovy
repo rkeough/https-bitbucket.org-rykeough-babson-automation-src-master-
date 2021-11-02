@@ -29,11 +29,7 @@ WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Automation')
 
 WebUI.setText(findTestObject('FormFields/inputLastName'), 'Test')
 
-<<<<<<< HEAD
-WebUI.setText(findTestObject('FormFields/inputEmail'), 'babsonTest1@gmail.com')
-=======
 WebUI.setText(findTestObject('null'), 'babsonTest1@gmail.com')
->>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
 
 WebUI.click(findTestObject('FormFields/ProgramOfInterest'))
 
@@ -43,19 +39,11 @@ WebUI.click(findTestObject('FormFields/IntendedTermOfEnrollment'))
 
 WebUI.selectOptionByValue(findTestObject('FormFields/IntendedTermOfEnrollment'), 'tfa_1217', false)
 
-<<<<<<< HEAD
-WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '5555555555')
-
-WebUI.click(findTestObject('FormFields/selectCountry'))
-
-WebUI.selectOptionByValue(findTestObject('FormFields/selectCountry'), 'tfa_1022', false)
-=======
 WebUI.setText(findTestObject('null'), '5555555555')
 
 WebUI.click(findTestObject('null'))
 
 WebUI.selectOptionByValue(findTestObject('null'), 'tfa_1022', false)
->>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
 
 WebUI.click(findTestObject('FormFields/selectState'))
 
@@ -65,11 +53,7 @@ WebUI.setText(findTestObject('FormFields/inputCity'), 'Babson')
 
 WebUI.setText(findTestObject('FormFields/inputZipCode'), '00000')
 
-<<<<<<< HEAD
-WebUI.click(findTestObject('FormFields/clickSubmit'))
-=======
 WebUI.click(findTestObject('null'))
->>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9
 
 WebUI.click(findTestObject('FormFields/TYPrivacyPolicy'))
 
