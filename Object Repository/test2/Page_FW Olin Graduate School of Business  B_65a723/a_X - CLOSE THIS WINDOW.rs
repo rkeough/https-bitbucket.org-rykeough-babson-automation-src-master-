@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-<<<<<<< HEAD:Object Repository/FormFields/Grad152/privacyPopUp.rs
-   <name>privacyPopUp</name>
-   <tag></tag>
-   <elementGuidId>5ec51903-96db-4f02-a992-1dc7ded85129</elementGuidId>
-=======
    <name>a_X - CLOSE THIS WINDOW</name>
    <tag></tag>
    <elementGuidId>571a8060-9ab1-410c-b08d-6892bf11e461</elementGuidId>
->>>>>>> 7365ddc7dcc5b439b6d90da13479296991602ef9:Object Repository/test2/Page_FW Olin Graduate School of Business  B_65a723/a_X - CLOSE THIS WINDOW.rs
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='cookie-handler']/div/p/a</value>
       </entry>
-      <entry>
-         <key>CSS</key>
-         <value>a.boxclose</value>
-      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <useRalativeImagePath>true</useRalativeImagePath>
+   <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -111,7 +101,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>(//a[contains(@href, '#')])[8]</value>
+      <value>(//a[contains(@href, '#')])[6]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
