@@ -29,6 +29,4 @@ Feature: Title of your feature
     Examples: 
       | name  | value | status  |
       | name1 |     5 | success |
-      
-      enroolent
       | name2 |     7 | Fail    |
