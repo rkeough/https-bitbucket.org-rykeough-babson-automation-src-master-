@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Executive Education</name>
+   <name>jjkl</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,11 +10,11 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>93446723-a683-4e4c-bcea-83c1f1ceabb4</testSuiteGuid>
+   <testSuiteGuid>7ce7c73b-8b93-4641-99bd-1e542f9ad600</testSuiteGuid>
    <testCaseLink>
-      <guid>58073282-1e6b-4a4c-ac47-2f933eaca55a</guid>
+      <guid>6443869f-6fc6-4a71-a15c-46465e94b2f5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BabsonAcademy</testCaseId>
+      <testCaseId>Test Cases/Brochures/Leadership_and_Influence</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
