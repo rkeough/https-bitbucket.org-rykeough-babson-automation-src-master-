@@ -1,32 +1,25 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+Form @152 @Graduate
+Feature: academics/graduate-school
+  I want to submit and verify form submits with the correct data
 
-  @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+  @Grad @152
+  Scenario Outline: Submit Grad form
+    Given I am on grad "<gradForm>" page
+    When I close the virtual popup
+    And I close the privacy policy popup
+    And I input the first and last name on the form
+    And I input an email address
+    And I select a program "<program>"
+    And I select a term "<term>"
+    And I input a phone number
+    And I select a country
+    And I select a state
+    And I input a city
+    And I input the zip code
+    And I click the submit button
+    Then I am on the correct "<thankYou>" page
 
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+      | gradForm                                          | program  | term     | thankYou                                                                      |
+      | https://www.babson.edu/academics/graduate-school/ | tfa_1184 | tfa_1042 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
+      | https://www.babson.edu/academics/graduate-school/ | tfa_1184 | tfa_1089 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
