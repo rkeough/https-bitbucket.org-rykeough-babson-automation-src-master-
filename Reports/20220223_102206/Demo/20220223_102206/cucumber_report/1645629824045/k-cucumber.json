@@ -1,0 +1,187 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "1d1eb7cb-3c8f-4623-a407-568d29dc1020",
+        "line": 21,
+        "name": "Submit Grad form",
+        "description": "",
+        "id": "academics/graduate-school;submit-grad-form;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6635558200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on grad \"https://www.babson.edu/academics/graduate-school/\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.babson.edu/academics/graduate-school/\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Grad152.GradPage(String)"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "400336ac-81e1-405a-aa84-02d9c2f5080c"
+          },
+          {
+            "result": {
+              "duration": 35225030500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I close the virtual popup",
+            "match": {
+              "location": "Grad152.closeVirtualPopup()"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "60350046-9784-4056-8e9a-23100c7842fd"
+          },
+          {
+            "result": {
+              "duration": 1777464000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I input the first and last name on the form",
+            "match": {
+              "location": "Grad152.FirstLastName()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "58c4953e-a998-45ee-af72-a4c122863ffe"
+          },
+          {
+            "result": {
+              "error_message": "com.kms.katalon.core.exception.StepFailedException: Unable to set text \u0027babsonTest1@gmail.com\u0027 of object \u0027Object Repository/FormFields/inputEmail\u0027\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:980)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$3.call(Unknown Source)\r\n\tat forms.Grad152.inputEmail(Grad152.groovy:61)\r\n\tat ✽.I input an email address(C:/Users/rkeough/git/babson-automation/Include/features/Forms/Demo.feature:9)\r\nCaused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: \u0027Object Repository/FormFields/inputEmail\u0027 located by \u0027//*[@type \u003d \u0027text\u0027 and @class \u003d \u0027validate-email required\u0027 and contains(@title, \u0027Email\u0027)]\u0027 not found\r\n\tat com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1370)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:51)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)\r\n\tat com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)\r\n\tat com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:980)\r\n\tat com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$3.call(Unknown Source)\r\n\tat forms.Grad152.inputEmail(Grad152.groovy:61)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:48)\r\n\tat cucumber.runtime.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:47)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:53)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:47)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:44)\r\n\tat cucumber.runtime.Runtime.runFeature(Runtime.java:120)\r\n\tat cucumber.runtime.Runtime.run(Runtime.java:106)\r\n\tat cucumber.api.cli.Main.run(Main.java:35)\r\n\tat cucumber.api.cli.Main$run.call(Unknown Source)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy:108)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$_runFeatureFile_closure1.doCall(CucumberBuiltinKeywords.groovy)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)\r\n\tat com.kms.katalon.core.keyword.internal.KeywordMain$runKeyword.call(Unknown Source)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:75)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile$0.callStatic(Unknown Source)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords.runFeatureFile(CucumberBuiltinKeywords.groovy:248)\r\n\tat com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords$runFeatureFile.call(Unknown Source)\r\n\tat Demo.run(Demo:20)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1645629726134.run(TempTestSuite1645629726134.groovy:36)\r\n",
+              "duration": 35035838700,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I input an email address",
+            "match": {
+              "location": "Grad152.inputEmail()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "8f68c162-a820-4c60-a19d-4f71474add07"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I select a program \"tfa_1184\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tfa_1184\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Grad152.SelectAProgramOfInterest(String)"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "94952e94-e4d6-4b04-975b-752cf5e35d6f"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I select a term \"tfa_1089\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tfa_1089\"",
+                  "offset": 16
+                }
+              ],
+              "location": "Grad152.SelectATermOfEnrollment(String)"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "04571f9f-972c-4105-92f6-dafe92a75cbd"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I input a phone number",
+            "match": {
+              "location": "Grad152.inputPhoneNumber()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "a768f905-4502-4fbd-817d-a41940cbbf79"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I select a country",
+            "match": {
+              "location": "Grad152.SelectACountry()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "2da812e1-dd6d-456c-8ff1-f6de68207d7d"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I select a state",
+            "match": {
+              "location": "Grad152.selectState()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "ac881b4b-721f-4781-9b39-58175d1fde2d"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I input a city",
+            "match": {
+              "location": "Grad152.inputCity()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "038116a6-dcca-4d3e-b92e-f533745eff2f"
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I input the zip code",
+            "match": {
+              "location": "Grad152.inputZipZode()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "4f348f05-f7bb-47bf-8721-5361b2dd8a6f"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Grad"
+          },
+          {
+            "name": "@152"
+          }
+        ]
+      }
+    ],
+    "name": "academics/graduate-school",
+    "description": "  I want to submit and verify form submits with the correct data",
+    "id": "academics/graduate-school",
+    "keyword": "Feature",
+    "uri": "C:/Users/rkeough/git/babson-automation/Include/features/Forms/Demo.feature",
+    "tags": []
+  }
+]

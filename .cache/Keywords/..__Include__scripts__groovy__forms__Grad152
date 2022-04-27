@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "CFDE646050214BDDD0EE6F5DC36D760C",
+  "keywordFileContentHash": "66B8B9BCAD83582475B9D2967CB2BCD2",
   "keywordClasses": [
     {
       "name": "forms.Grad152",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

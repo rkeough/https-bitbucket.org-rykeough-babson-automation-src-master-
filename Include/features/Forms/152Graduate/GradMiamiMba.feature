@@ -9,12 +9,12 @@ Feature: admission/graduate-school/mba/part-time-mba/
     And I input the first name last name and email for the form
     And I select a program "<program>"
     And I select a term "<term>"
-    And I input the grad phone number
-    And I select a grad country
+    And I input a phone number
+    And I select a country
     And I select a state
     And I input a city
     And I input the zip code
-    And I click the grad submit button
+    And I click the submit button
     Then I am on the correct "<thankYou>" page
 
     Examples: 

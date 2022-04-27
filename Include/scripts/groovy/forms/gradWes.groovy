@@ -48,8 +48,8 @@ class gradWes {
 
 	@When("I select a wes country")
 	def SelectAWesCountry() {
-		WebUI.selectOptionByValue(findTestObject('FormFields/Grad152/countryWes'), 
-    'tfa_1348', true)
+		WebUI.selectOptionByValue(findTestObject('FormFields/Grad152/countryWes'),
+				'tfa_1348', true)
 	}
 
 	@When("I click the captcha box")

@@ -25,7 +25,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Katalon')
 
-WebUI.setText(findTestObject('FormFields/inputLastName'), 'Automation')
+WebUI.setText(findTestObject('FormFields/inputLastName'), 'erxtest')
 
 WebUI.setText(findTestObject('null'), 'aaa@babson.edu')
 

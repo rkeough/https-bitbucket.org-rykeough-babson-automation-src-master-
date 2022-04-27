@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/FormFields/Grad152/virtualPopUp",
+      "brokenLocator": "//div[@id\u003d\u0027cookie-handler2\u0027]/div/p/a",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027©\u0027])[1]/following::a[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20220224_103047/Demo/20220224_103047/Object Repository/FormFields/Grad152/virtualPopUp_neighbor.png"
+    }
+  ]
+}

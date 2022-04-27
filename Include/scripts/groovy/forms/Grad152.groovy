@@ -30,6 +30,9 @@ import com.kms.katalon.core.testobject.TestObjectProperty
 import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
+import org.openqa.selenium.Cookie
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
@@ -39,26 +42,31 @@ import cucumber.api.java.en.Then
 
 class Grad152 {
 
-	@Given("I am on grad {string} page")
-	public void GradPage(String gradForm) {
-		WebUI.openBrowser('')
+	@Given("I am on the homepage")
+	public void Homepage() {
+		WebUI.openBrowser("https://www.babson.edu")
 		WebUI.maximizeWindow()
-		WebUI.navigateToUrl(gradForm)
+		Cookie ck = new Cookie("babsonedu-babovisited2", "true");
+		WebDriver driver = DriverFactory.getWebDriver()
+		driver.manage().addCookie(ck)
+		Cookie cp = new Cookie("visitor_id690663", "346378001");
+		driver.manage().addCookie(cp)
 	}
 
-	@When("I close the virtual popup")
-	public void closeVirtualPopup() {
-		WebUI.click(findTestObject('FormFields/Grad152/virtualPopUp'))
+	@When ("I am on grad {string} page")
+	public void GradPage(String gradForm) {
+		WebUI.navigateToUrl(gradForm)
 	}
 
 	@When("I input the first and last name on the form")
 	public void FirstLastName() {
-		WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Katalon')
-		WebUI.setText(findTestObject('FormFields/inputLastName'), 'Automation')
+		WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Test')
+		WebUI.setText(findTestObject('FormFields/inputLastName'), 'erxtest')
 	}
+
 	@When("I input an email address")
 	public void inputEmail() {
-		WebUI.setText(findTestObject('FormFields/inputEmail'), 'babsonTest1@gmail.com')
+		WebUI.setText(findTestObject('FormFields/inputEmail'), 'larry21@babson-test.com')
 	}
 
 	@When("I select a program {string}")
@@ -73,27 +81,27 @@ class Grad152 {
 
 	@When("I input a phone number")
 	public void inputPhoneNumber() {
-		WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '0000000000')
+		WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '1011010111')
 	}
 
 	@When("I select a country")
 	def SelectACountry() {
-		WebUI.selectOptionByLabel(findTestObject('FormFields/selectCountry'), 'United States', false)
+		WebUI.selectOptionByLabel(findTestObject('FormFields/selectCountry'), 'Barbados', false)
 	}
 
-	@When("I select a state")
-	public void selectState() {
-		WebUI.selectOptionByValue(findTestObject('FormFields/selectState'), 'tfa_748', false)
+	@When("I input a state")
+	public void inputState() {
+		WebUI.setText(findTestObject('Object Repository/XXXXXX/input_StateProvince_tfa_18'), 'TestState')
 	}
 
 	@When("I input a city")
 	public void inputCity() {
-		WebUI.setText(findTestObject('FormFields/gradCity'), 'Wellesley')
+		WebUI.setText(findTestObject('Object Repository/XXXXXX/input_City_tfa_17'), 'TestCity')
 	}
 
-	@Then("I input the zip code")
-	public void inputZipZode() {
-		WebUI.setText(findTestObject('FormFields/gradZipCode'), '00000')
+	@Then("I input the postal code")
+	public void inputPostalZode() {
+		WebUI.setText(findTestObject('FormFields/PostalCode'), '11111')
 	}
 
 	@When("I click the submit button")
@@ -106,5 +114,18 @@ class Grad152 {
 		def tyurl = WebUI.getUrl()
 		WebUI.verifyEqual(tyurl, thankYou)
 		WebUI.closeBrowser()
+	}
+
+	@When("I get the submit request")
+	public void submitRequest() {
+		WebUI.delay(2)
+		WS.sendRequest(findTestObject('FormFields/SubmitForm'))
+	}
+
+
+	@When("I delete the form record")
+	public void deleteRequest() {
+		WebUI.delay(2)
+		WS.sendRequest(findTestObject('FormFields/DeleteForm'))
 	}
 }

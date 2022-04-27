@@ -21,39 +21,46 @@ import com.sun.org.apache.bcel.internal.generic.Select as Select
 import com.kms.katalon.core.webui.keyword.builtin.SelectOptionByIndexKeyword as SelectOptionByIndexKeyword
 import java.lang.String as String
 
+
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
+WebUI.navigateToUrl('www.babson.edu')
+
 WebUI.navigateToUrl('gradForm')
 
-WebUI.click(findTestObject('FormFields/Grad152/virtualPopUp'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/XXXXXX/button_CLOSE'))
 
-WebUI.click(findTestObject('FormFields/Grad152/privacyPopUp'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Test')
 
-WebUI.setText(findTestObject('FormFields/inputFirstName'), 'Katalon')
+WebUI.setText(findTestObject('FormFields/inputLastName'), 'erxtest')
 
-WebUI.setText(findTestObject('FormFields/inputLastName'), 'Automation')
-
-WebUI.setText(findTestObject('FormFields/inputEmail'), 'babsonTest1@gmail.com')
+WebUI.setText(findTestObject('FormFields/inputEmail'), 'larry21@babson-test.com')
 
 WebUI.selectOptionByValue(findTestObject('FormFields/Grad152/selectPOI'), program, false)
 
 WebUI.selectOptionByValue(findTestObject('FormFields/Grad152/selectTOE'), term, false)
 
-WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '0000000000')
+WebUI.setText(findTestObject('FormFields/inputPhoneNumber'), '1011010111')
 
-WebUI.selectOptionByLabel(findTestObject('FormFields/selectCountry'), 'United States', false)
+WebUI.selectOptionByLabel(findTestObject('FormFields/selectCountry'), 'Barbados', false)
 
-WebUI.selectOptionByValue(findTestObject('FormFields/gradState'), 'tfa_748', false)
+WebUI.setText(findTestObject('Object Repository/XXXXXX/input_StateProvince_tfa_18'), 'TestState')
 
-WebUI.setText(findTestObject('FormFields/gradCity'), 'Wellesley')
+WebUI.setText(findTestObject('Object Repository/XXXXXX/input_City_tfa_17'), 'TestCity')
 
-WebUI.setText(findTestObject('FormFields/gradZipCode'), '00000')
+WebUI.setText(findTestObject('FormFields/PostalCode'), '11111')
 
 WebUI.click(findTestObject('FormFields/clickSubmit'))
 
 WebUI.getUrl()
 
 WebUI.closeBrowser()
+
+WS.sendRequest(findTestObject('FormFields/SubmitForm'))
+
+WebUI.delay(2)
+
+WS.sendRequest(findTestObject('FormFields/DeleteForm'))
 

@@ -10,11 +10,15 @@
          <value>//input[@id='tfa_1036']</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @id = 'tfa_1036' and @name = 'tfa_1036' and @title = 'Zip Code']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#tfa_1036</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

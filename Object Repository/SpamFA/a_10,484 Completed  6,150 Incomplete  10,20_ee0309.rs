@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_10,484 Completed  6,150 Incomplete  10,20_ee0309</name>
+   <tag></tag>
+   <elementGuidId>df2e5345-57e2-4987-9b2b-1c183f0c1aa7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>dd > a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='ML96erJx--slds-tabs_panel-0']/div[3]/div/div/dl/div/div/dd/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>71fbbfcf-076d-4d14-ac0e-63715cb8ba8d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/reports/view/152</value>
+      <webElementGuid>702fd0a7-1d54-42c0-b55a-1188014800ef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>responsesLink</value>
+      <webElementGuid>5262a42f-37da-45c3-aa61-5024e80c29a9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>10,484 Completed | 6,150 Incomplete | 10,202 Unread</value>
+      <webElementGuid>5974fb7a-f001-4c3f-b6e5-fd9311184f03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ML96erJx--slds-tabs_panel-0&quot;)/div[@class=&quot;infinite-scroll-component__outerdiv&quot;]/div[@class=&quot;infinite-scroll-component&quot;]/div[@class=&quot;Card form-card&quot;]/dl[@class=&quot;form-card__info-row&quot;]/div[@class=&quot;form-card__info-column form-card__info-column--wide&quot;]/div[@class=&quot;form-card__info&quot;]/dd[1]/a[1]</value>
+      <webElementGuid>d8a998b3-c470-4253-ac6b-4c49a063a2a1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='ML96erJx--slds-tabs_panel-0']/div[3]/div/div/dl/div/div/dd/a</value>
+      <webElementGuid>8a1ae056-0ddb-49fd-aafb-c19ca8c36ff1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Responses:'])[1]/following::a[1]</value>
+      <webElementGuid>c3a4b370-5b98-4501-b10c-55e1e7dd1734</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[1]/following::a[1]</value>
+      <webElementGuid>fd6615a7-2ab2-4d9a-8859-c3790246a828</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Last Modified:'])[1]/preceding::a[1]</value>
+      <webElementGuid>c0e1645e-1706-48b8-8ff7-ccaf49252326</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='April 26, 2022'])[1]/preceding::a[1]</value>
+      <webElementGuid>c645de04-209c-4306-be89-5e704ad8a956</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='10,484']/parent::*</value>
+      <webElementGuid>26d314a7-818a-477c-aa05-35050856d51f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '/reports/view/152')])[2]</value>
+      <webElementGuid>f40e6281-8040-4505-a6e6-84e86968651f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//dd/a</value>
+      <webElementGuid>8d035ed7-1737-4d14-9f63-14e8a6b4eca9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/reports/view/152' and (text() = '10,484 Completed | 6,150 Incomplete | 10,202 Unread' or . = '10,484 Completed | 6,150 Incomplete | 10,202 Unread')]</value>
+      <webElementGuid>587d6153-d96f-4e64-a323-9f56a7000dd5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

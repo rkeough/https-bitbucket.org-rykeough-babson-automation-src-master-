@@ -8,18 +8,6 @@
    <dataFileGUID>23ad7ed3-9ebe-4b8f-827f-8e992316276f</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>tfa_1184 tfa_1042</data>
-   <data>tfa_1043 tfa_1089</data>
-   <internalDataColumns>
-      <columnIndex>0</columnIndex>
-      <name>gradProgramOfInterest</name>
-      <size>2</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>1</columnIndex>
-      <name>gradIntendedTerm</name>
-      <size>2</size>
-   </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
