@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="114.455098">
+<testcase classname="academics/graduate-school" name="Submit Grad form" time="59.288719">
+<system-out><![CDATA[Given I am on the homepage..................................................passed
+When I am on grad "https://www.babson.edu/academics/graduate-school/mba/" page.passed
+And I input the first and last name on the form.............................passed
+And I input an email address................................................passed
+And I select a program "tfa_1184"...........................................passed
+And I select a term "tfa_1042"..............................................passed
+And I input a phone number..................................................passed
+And I select a country......................................................passed
+And I input a state.........................................................passed
+And I input a city..........................................................passed
+And I input the postal code.................................................passed
+And I click the submit button...............................................passed
+And I am on the correct "https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/" page.passed
+And I get the submit request................................................passed
+Then I delete the form record...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="academics/graduate-school" name="Submit Grad form 2" time="55.166379">
+<system-out><![CDATA[Given I am on the homepage..................................................passed
+When I am on grad "https://www.babson.edu/academics/graduate-school/mba/" page.passed
+And I input the first and last name on the form.............................passed
+And I input an email address................................................passed
+And I select a program "tfa_1184"...........................................passed
+And I select a term "tfa_1089"..............................................passed
+And I input a phone number..................................................passed
+And I select a country......................................................passed
+And I input a state.........................................................passed
+And I input a city..........................................................passed
+And I input the postal code.................................................passed
+And I click the submit button...............................................passed
+And I am on the correct "https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/" page.passed
+And I get the submit request................................................passed
+Then I delete the form record...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

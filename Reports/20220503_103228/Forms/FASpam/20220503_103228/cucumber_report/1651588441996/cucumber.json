@@ -1,0 +1,500 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 25,
+        "name": "Submit Grad form",
+        "description": "",
+        "id": "academics/graduate-school;submit-grad-form;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15463655900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "Grad152.Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4252861800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on grad \"https://www.babson.edu/academics/graduate-school/mba/\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.babson.edu/academics/graduate-school/mba/\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Grad152.GradPage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3245204600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input the first and last name on the form",
+            "match": {
+              "location": "Grad152.FirstLastName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1716631600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input an email address",
+            "match": {
+              "location": "Grad152.inputEmail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2154201400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select a program \"tfa_1184\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tfa_1184\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Grad152.SelectAProgramOfInterest(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2748103600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select a term \"tfa_1042\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tfa_1042\"",
+                  "offset": 16
+                }
+              ],
+              "location": "Grad152.SelectATermOfEnrollment(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1463406400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I input a phone number",
+            "match": {
+              "location": "Grad152.inputPhoneNumber()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1354176800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select a country",
+            "match": {
+              "location": "Grad152.SelectACountry()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 948525500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I input a state",
+            "match": {
+              "location": "Grad152.inputState()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1082394800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I input a city",
+            "match": {
+              "location": "Grad152.inputCity()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1166249400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I input the postal code",
+            "match": {
+              "location": "Grad152.inputPostalZode()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12887370700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click the submit button",
+            "match": {
+              "location": "Grad152.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1290476500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on the correct \"https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Grad152.thankYouPage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5332470600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I get the submit request",
+            "match": {
+              "location": "Grad152.submitRequest()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4101491500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I delete the form record",
+            "match": {
+              "location": "Grad152.deleteRequest()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Form"
+          },
+          {
+            "name": "@152"
+          },
+          {
+            "name": "@Graduate"
+          },
+          {
+            "name": "@Grad"
+          },
+          {
+            "name": "@152"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Submit Grad form",
+        "description": "",
+        "id": "academics/graduate-school;submit-grad-form;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12847206800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "Grad152.Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3505657800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on grad \"https://www.babson.edu/academics/graduate-school/mba/\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.babson.edu/academics/graduate-school/mba/\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Grad152.GradPage(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3503568600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input the first and last name on the form",
+            "match": {
+              "location": "Grad152.FirstLastName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1682354000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input an email address",
+            "match": {
+              "location": "Grad152.inputEmail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1125049700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select a program \"tfa_1184\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tfa_1184\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Grad152.SelectAProgramOfInterest(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1233143300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select a term \"tfa_1089\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tfa_1089\"",
+                  "offset": 16
+                }
+              ],
+              "location": "Grad152.SelectATermOfEnrollment(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 925903400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I input a phone number",
+            "match": {
+              "location": "Grad152.inputPhoneNumber()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1019406900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select a country",
+            "match": {
+              "location": "Grad152.SelectACountry()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1174328700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I input a state",
+            "match": {
+              "location": "Grad152.inputState()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1160644700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I input a city",
+            "match": {
+              "location": "Grad152.inputCity()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1181988700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I input the postal code",
+            "match": {
+              "location": "Grad152.inputPostalZode()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17864204800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click the submit button",
+            "match": {
+              "location": "Grad152.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1083937600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on the correct \"https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Grad152.thankYouPage(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2412370000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I get the submit request",
+            "match": {
+              "location": "Grad152.submitRequest()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4385909600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I delete the form record",
+            "match": {
+              "location": "Grad152.deleteRequest()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Form"
+          },
+          {
+            "name": "@152"
+          },
+          {
+            "name": "@Graduate"
+          },
+          {
+            "name": "@Grad"
+          },
+          {
+            "name": "@152"
+          }
+        ]
+      }
+    ],
+    "name": "academics/graduate-school",
+    "description": "  I want to submit and verify form submits with the correct data",
+    "id": "academics/graduate-school",
+    "keyword": "Feature",
+    "uri": "C:/Users/rkeough/git/babson-automation/Include/features/Forms/Demo.feature",
+    "tags": [
+      {
+        "name": "@Form",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@152",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 7
+        }
+      },
+      {
+        "name": "@Graduate",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 12
+        }
+      }
+    ]
+  }
+]

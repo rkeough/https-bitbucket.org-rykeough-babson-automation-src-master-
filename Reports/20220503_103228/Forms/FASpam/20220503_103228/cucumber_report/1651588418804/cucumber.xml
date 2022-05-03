@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.529273">
+<testcase classname="Update third party spam on Form Assembly" name="Check the third party spam box" time="20.529273">
+<system-out><![CDATA[Given I log into Form Assembly..............................................passed
+And I click the spam box....................................................passed
+Then I click the Apply button...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

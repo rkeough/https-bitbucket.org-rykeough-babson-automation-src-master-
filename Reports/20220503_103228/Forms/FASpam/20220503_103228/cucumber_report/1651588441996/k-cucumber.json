@@ -1,0 +1,532 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "e970014e-eab3-409f-b347-212964390cbb",
+        "line": 25,
+        "name": "Submit Grad form",
+        "description": "",
+        "id": "academics/graduate-school;submit-grad-form;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15463655900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "Grad152.Homepage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "2b44a0d0-602b-472e-8c6b-44a85a71117e"
+          },
+          {
+            "result": {
+              "duration": 4252861800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on grad \"https://www.babson.edu/academics/graduate-school/mba/\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.babson.edu/academics/graduate-school/mba/\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Grad152.GradPage(String)"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "374c8634-a3a8-4ba1-b116-0097e5fdffaa"
+          },
+          {
+            "result": {
+              "duration": 3245204600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input the first and last name on the form",
+            "match": {
+              "location": "Grad152.FirstLastName()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "374ecc8a-2a4a-46e0-8a54-b99aba4bf898"
+          },
+          {
+            "result": {
+              "duration": 1716631600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input an email address",
+            "match": {
+              "location": "Grad152.inputEmail()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "99564264-77f0-4bc9-b542-86fb407a2111"
+          },
+          {
+            "result": {
+              "duration": 2154201400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select a program \"tfa_1184\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tfa_1184\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Grad152.SelectAProgramOfInterest(String)"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "688e1348-38c2-45d3-a9a9-f6c19ed62842"
+          },
+          {
+            "result": {
+              "duration": 2748103600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select a term \"tfa_1042\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tfa_1042\"",
+                  "offset": 16
+                }
+              ],
+              "location": "Grad152.SelectATermOfEnrollment(String)"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "001fcfa1-cd85-47b2-979f-67a0da041d24"
+          },
+          {
+            "result": {
+              "duration": 1463406400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I input a phone number",
+            "match": {
+              "location": "Grad152.inputPhoneNumber()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "c0d47b78-d881-4403-8659-8b80fed16767"
+          },
+          {
+            "result": {
+              "duration": 1354176800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select a country",
+            "match": {
+              "location": "Grad152.SelectACountry()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "ad4ec1eb-c4d3-479e-b348-6361e65e86b7"
+          },
+          {
+            "result": {
+              "duration": 948525500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I input a state",
+            "match": {
+              "location": "Grad152.inputState()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "52308d77-fbcb-4d5f-b1d4-f827d7174977"
+          },
+          {
+            "result": {
+              "duration": 1082394800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I input a city",
+            "match": {
+              "location": "Grad152.inputCity()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "a9b5cbca-7b37-4edd-827b-89d123522ed8"
+          },
+          {
+            "result": {
+              "duration": 1166249400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I input the postal code",
+            "match": {
+              "location": "Grad152.inputPostalZode()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "f79bbe2c-46a8-4207-8870-61d6d329ddab"
+          },
+          {
+            "result": {
+              "duration": 12887370700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click the submit button",
+            "match": {
+              "location": "Grad152.clickSubmit()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "d655e19d-78ac-4cf6-adab-7a22864ef3b8"
+          },
+          {
+            "result": {
+              "duration": 1290476500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on the correct \"https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Grad152.thankYouPage(String)"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "923dc1d4-9a82-4bdb-a7be-6a2c70b88450"
+          },
+          {
+            "result": {
+              "duration": 5332470600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I get the submit request",
+            "match": {
+              "location": "Grad152.submitRequest()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "6fb7d61d-b6df-4bb3-a5fe-08e731b43a90"
+          },
+          {
+            "result": {
+              "duration": 4101491500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I delete the form record",
+            "match": {
+              "location": "Grad152.deleteRequest()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "0e0304ca-ef8f-40bd-9092-6b0063995421"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Form"
+          },
+          {
+            "name": "@152"
+          },
+          {
+            "name": "@Graduate"
+          },
+          {
+            "name": "@Grad"
+          },
+          {
+            "name": "@152"
+          }
+        ]
+      },
+      {
+        "BDD_TESTRUN_UUID": "c0c10814-2c03-4598-9b47-8ef2c81f2e85",
+        "line": 26,
+        "name": "Submit Grad form",
+        "description": "",
+        "id": "academics/graduate-school;submit-grad-form;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12847206800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "Grad152.Homepage()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "ca1d8cf3-2b5d-4247-875e-466a73f6421c"
+          },
+          {
+            "result": {
+              "duration": 3505657800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on grad \"https://www.babson.edu/academics/graduate-school/mba/\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.babson.edu/academics/graduate-school/mba/\"",
+                  "offset": 13
+                }
+              ],
+              "location": "Grad152.GradPage(String)"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "371e3dac-7c45-4fa2-b779-b97944b2834a"
+          },
+          {
+            "result": {
+              "duration": 3503568600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input the first and last name on the form",
+            "match": {
+              "location": "Grad152.FirstLastName()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "868f3b42-8dd5-4045-a554-c0be57c795b8"
+          },
+          {
+            "result": {
+              "duration": 1682354000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I input an email address",
+            "match": {
+              "location": "Grad152.inputEmail()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "5860e9f5-9f87-4398-b494-4cdd28872299"
+          },
+          {
+            "result": {
+              "duration": 1125049700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select a program \"tfa_1184\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tfa_1184\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Grad152.SelectAProgramOfInterest(String)"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "87ab715b-2b88-43e2-8fe5-e7a32f0a6dd7"
+          },
+          {
+            "result": {
+              "duration": 1233143300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select a term \"tfa_1089\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tfa_1089\"",
+                  "offset": 16
+                }
+              ],
+              "location": "Grad152.SelectATermOfEnrollment(String)"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "9059f987-9da8-4a37-bf75-fd90f90fbc34"
+          },
+          {
+            "result": {
+              "duration": 925903400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I input a phone number",
+            "match": {
+              "location": "Grad152.inputPhoneNumber()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "b8284486-f0fe-43a6-a566-e4a54a6e02d9"
+          },
+          {
+            "result": {
+              "duration": 1019406900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select a country",
+            "match": {
+              "location": "Grad152.SelectACountry()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "6a981682-a0c5-4cec-b21a-73c0a920fb21"
+          },
+          {
+            "result": {
+              "duration": 1174328700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I input a state",
+            "match": {
+              "location": "Grad152.inputState()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "1b019256-b2d5-4dbc-8883-8683aeb842b9"
+          },
+          {
+            "result": {
+              "duration": 1160644700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I input a city",
+            "match": {
+              "location": "Grad152.inputCity()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "3006deb5-94f4-4a0a-9f1d-d28c8afa771f"
+          },
+          {
+            "result": {
+              "duration": 1181988700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I input the postal code",
+            "match": {
+              "location": "Grad152.inputPostalZode()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "e6574804-b052-4d59-8d68-317903c6b459"
+          },
+          {
+            "result": {
+              "duration": 17864204800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click the submit button",
+            "match": {
+              "location": "Grad152.clickSubmit()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "abc4043a-5324-4a4b-9eab-882a7d0d3d6e"
+          },
+          {
+            "result": {
+              "duration": 1083937600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on the correct \"https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Grad152.thankYouPage(String)"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "1bf9d05d-37ce-4b3e-9cf0-6a76694bb112"
+          },
+          {
+            "result": {
+              "duration": 2412370000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I get the submit request",
+            "match": {
+              "location": "Grad152.submitRequest()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "93963f9d-6057-4712-9b0c-eff5f46cf2ed"
+          },
+          {
+            "result": {
+              "duration": 4385909600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I delete the form record",
+            "match": {
+              "location": "Grad152.deleteRequest()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "2a5b2611-47de-49a9-8a56-9cab1167fbdc"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Form"
+          },
+          {
+            "name": "@152"
+          },
+          {
+            "name": "@Graduate"
+          },
+          {
+            "name": "@Grad"
+          },
+          {
+            "name": "@152"
+          }
+        ]
+      }
+    ],
+    "name": "academics/graduate-school",
+    "description": "  I want to submit and verify form submits with the correct data",
+    "id": "academics/graduate-school",
+    "keyword": "Feature",
+    "uri": "C:/Users/rkeough/git/babson-automation/Include/features/Forms/Demo.feature",
+    "tags": [
+      {
+        "name": "@Form",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@152",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 7
+        }
+      },
+      {
+        "name": "@Graduate",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 12
+        }
+      }
+    ]
+  }
+]

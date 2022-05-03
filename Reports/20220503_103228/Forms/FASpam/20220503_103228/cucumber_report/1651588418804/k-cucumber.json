@@ -1,0 +1,80 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "78b53b40-c2f2-42fa-a49d-b95ddcf00924",
+        "line": 6,
+        "name": "Check the third party spam box",
+        "description": "",
+        "id": "update-third-party-spam-on-form-assembly;check-the-third-party-spam-box",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12635361100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I log into Form Assembly",
+            "match": {
+              "location": "FormAssemblySpam.LogIntoFormAssembly()"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "a9f80b2f-6c68-4aa7-a6d4-8f4c672b1fe0"
+          },
+          {
+            "result": {
+              "duration": 1421129000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click the spam box",
+            "match": {
+              "location": "FormAssemblySpam.ClickSpamBox()"
+            },
+            "keyword": "And ",
+            "BDD_STEP_UUID": "270f2fbd-53c5-4169-bf43-3167f1877440"
+          },
+          {
+            "result": {
+              "duration": 6456353200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click the Apply button",
+            "match": {
+              "location": "FormAssemblySpam.ClickApplyButton()"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "0ff5f092-6212-4b06-af09-1874e0d5e525"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FormAssembly"
+          },
+          {
+            "name": "@FormAssembly"
+          }
+        ]
+      }
+    ],
+    "name": "Update third party spam on Form Assembly",
+    "description": "  I want to change the third party spam box so automation can run",
+    "id": "update-third-party-spam-on-form-assembly",
+    "keyword": "Feature",
+    "uri": "C:/Users/rkeough/git/babson-automation/Include/features/Forms/FormAssemblySpam.feature",
+    "tags": [
+      {
+        "name": "@FormAssembly",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

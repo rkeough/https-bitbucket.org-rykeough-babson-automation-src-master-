@@ -50,31 +50,13 @@ class FormAssemblySpam {
 	public void LogIntoFormAssembly () {
 		WebUI.openBrowser('')
 		WebUI.maximizeWindow()
-		WebUI.navigateToUrl('https://babson.tfaforms.net/')
+		WebUI.navigateToUrl('https://babson.tfaforms.net/forms/edit/display/152')
 		WebUI.setText(findTestObject('Object Repository/SpamFA/input_Username or Email_dataUserusername'), 'digitalsupport@babson.edu')
 		WebUI.setEncryptedText(findTestObject('Object Repository/SpamFA/input_Show_dataUserpassword'), 'JNHshaFIsvHCWCGTc4ftx3niQhp2cMsn')
 		WebUI.click(findTestObject('Object Repository/SpamFA/button_Log In'))
 	}
 
-	@When("I search for the form Id")
-	public void SearchForForm() {
-		WebUI.setText(findTestObject('Object Repository/SpamFA/input_Search_D5Gfqd4ssQ'), '152')
-	}
 
-	@When("I click the list of requests")
-	public void ClickRequests() {
-		WebUI.click(findTestObject('Object Repository/SpamFA/a_10,484 Completed  6,150 Incomplete  10,20_ee0309'))
-	}
-
-	@When("I click the Summary tab")
-	public void ClickSummaryTab() {
-		WebUI.click(findTestObject('Object Repository/SpamFA/span_Summary'))
-	}
-
-	@When("I click the Processing tab")
-	public void ClickProcessingTab() {
-		WebUI.click(findTestObject('Object Repository/SpamFA/span_Processing'))
-	}
 	@When("I click the spam box")
 	public void ClickSpamBox() {
 		WebUI.click(findTestObject('Object Repository/SpamFA/input_Use Google reCAPTCHA (a challenge tha_d7b3d0'))

@@ -24,13 +24,4 @@ Feature: academics/graduate-school
       | gradForm                                              | program  | term     | thankYou                                                                      |
       | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1042 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
       | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1089 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1042 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1089 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1186 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1196 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1219 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1220 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1219 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1220 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1257 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1263 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
+
