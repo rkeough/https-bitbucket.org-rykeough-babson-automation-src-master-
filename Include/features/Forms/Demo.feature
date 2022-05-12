@@ -21,7 +21,6 @@ Feature: academics/graduate-school
     Then I delete the form record
 
     Examples: 
-      | gradForm                                              | program  | term     | thankYou                                                                      |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1042 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-      | https://www.babson.edu/academics/graduate-school/mba/ | tfa_1184 | tfa_1089 | https://www.babson.edu/academics/graduate-school/mba/full-time-mba/thank-you/ |
-
+      | gradForm                                                                             | program   | term     | thankYou                                                                                       |
+      | https://www.babson.edu/academics/graduate-school/certificate-in-advanced-management/ | tfa_1075 | tfa_1155 | https://www.babson.edu/academics/graduate-school/certificate-in-advanced-management/thank-you/ |
+      | https://www.babson.edu/academics/graduate-school/certificate-in-advanced-management/ | tfa_1156  | tfa_1195 | https://www.babson.edu/academics/graduate-school/certificate-in-advanced-management/thank-you/ |

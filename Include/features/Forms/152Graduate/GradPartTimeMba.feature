@@ -4,18 +4,21 @@ Feature: admission/graduate-school/mba/part-time-mba/
 
   @Grad @152
   Scenario Outline: Submit Grad form
-    Given I am on grad "<gradForm>" page
-    When I close the privacy policy popup
-    And I input the first name last name and email for the form
+    Given I am on the homepage
+    When I am on grad "<gradForm>" page
+    And I input the first and last name on the form
+    And I input an email address
     And I select a program "<program>"
     And I select a term "<term>"
     And I input a phone number
     And I select a country
-    And I select a state
+    And I input a state
     And I input a city
-    And I input the zip code
+    And I input the postal code
     And I click the submit button
-    Then I am on the correct "<thankYou>" page
+    And I am on the correct "<thankYou>" page
+    And I get the submit request
+    Then I delete the form record
 
     Examples: 
       | gradForm                                              | program  | term     | thankYou                                                       |
