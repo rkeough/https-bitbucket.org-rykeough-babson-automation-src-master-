@@ -56,12 +56,16 @@ class FormAssemblySpam {
 		WebUI.click(findTestObject('Object Repository/SpamFA/button_Log In'))
 	}
 
-
 	@When("I click the spam box")
 	public void ClickSpamBox() {
 		WebUI.click(findTestObject('Object Repository/SpamFA/input_Use Google reCAPTCHA (a challenge tha_d7b3d0'))
 	}
 
+	@When("I click captcha box")
+	public void ClickCaptchaBox() {
+		WebUI.click(findTestObject('Object Repository/Captcha/CaptchaButton'))
+	}
+	
 	@When("I click the Apply button")
 	public void ClickApplyButton() {
 		WebUI.click(findTestObject('Object Repository/SpamFA/input_This custom message which will be dis_9a4b08'))
